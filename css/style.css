@@ -64,7 +64,7 @@ img {
   text-align: center;
 }
 
-._com-btn-wrap ._com-btn {
+._com-btn {
   position: relative;
   display: inline-block;
   background-color: #2D58AF;
@@ -75,7 +75,7 @@ img {
   text-decoration: none;
 }
 
-._com-btn-wrap ._com-btn::before {
+._com-btn::before {
   position: relative;
   display: inline-block;
   content: "";
@@ -130,6 +130,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+._new-line {
+  display: inline-block;
 }
 
 .header {
@@ -226,7 +230,7 @@ img {
                     ABOUT
 ====================================================================*/
   /*====================================================================
-                    
+                    promise
 ====================================================================*/
 }
 
@@ -466,6 +470,91 @@ img {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.index .promise {
+  background-color: #F0F5FD;
+}
+
+.index .promise .promise-title {
+  margin: auto;
+  margin-bottom: 22px;
+}
+
+.index .promise .promise-text {
+  text-align: center;
+  line-height: 1.666em;
+  font-size: 1.125em;
+  margin-bottom: 86px;
+}
+
+.index .promise-contents {
+  margin-bottom: -50px;
+}
+
+.index .promise-contents__item {
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 50px 35px;
+  background-color: #fff;
+  position: relative;
+}
+
+.index .promise-contents__item::before {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 86px;
+  left: 28px;
+}
+
+.index .promise-contents__item:first-child::before {
+  content: url(.././img/index/no1.png);
+}
+
+.index .promise-contents__item:nth-child(2)::before {
+  content: url(.././img/index/no2.png);
+  top: 90px;
+  left: 45px;
+}
+
+.index .promise-contents__item:nth-child(3)::before {
+  content: url(.././img/index/no3.png);
+  top: 90px;
+  left: 40px;
+}
+
+.index .promise-contents__item:last-child::before {
+  content: url(.././img/index/no4.png);
+  top: 90px;
+  left: 48px;
+}
+
+.index .promise-contents__item__text {
+  position: relative;
+  width: calc((550 / 950) * 100%);
+}
+
+.index .promise-contents__item__text__title {
+  margin-bottom: 35px;
+}
+
+.index .promise-contents__item__text__title span {
+  font-size: 1.5em;
+  font-family: fot-klee-pro, sans-serif;
+  color: #2D58AF;
+}
+
+.index .promise-contents__item__text__txt {
+  padding-right: 50px;
+}
+
+.index .promise-contents__item__text__txt span {
+  color: #2D58AF;
+}
+
+.index .promise-contents__item__img {
+  width: calc((400 / 950) * 100%);
 }
 
 /*====================================================================

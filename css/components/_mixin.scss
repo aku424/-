@@ -54,33 +54,49 @@ $fv-title: fot-klee-pro, sans-serif;
     }
 }
 
-//共通のスタイルのボタン
-._com-btn-wrap{
+//////共通デザイン//////
+@mixin _com-btn-wrap {
     display: block;
     text-align: center;
-    ._com-btn{
+}
+@mixin _com-btn {
+    position: relative;
+    display: inline-block;
+    background-color: $main-color;
+    border-radius: 40px;
+    padding: 24px 100px;
+    color: #fff;
+    font-size: 1.125em;
+    text-decoration: none;
+    &::before{
         position: relative;
         display: inline-block;
-        background-color: $main-color;
-        border-radius: 40px;
-        padding: 24px 100px;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right:2px solid #fff;
+        border-bottom:2px solid #fff;
+        transform: rotate(-45deg);
+        top: 50%;
+        right: -120px;
         color: #fff;
-        font-size: 1.125em;
-        text-decoration: none;
-        &::before{
-            position: relative;
-            display: inline-block;
-            content: "";
-            width: 10px;
-            height: 10px;
-            border-right:2px solid #fff;
-            border-bottom:2px solid #fff;
-            transform: rotate(-45deg);
-            top: 50%;
-            right: -120px;
-            color: #fff;
-            
-
-        }
     }
+}
+
+
+//グラデーション背景
+@mixin _com-bg{
+    background: rgb(240,245,253);
+    background: linear-gradient(180deg, rgba(240,245,253,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(240,245,253,1) 100%);
+}
+
+
+
+//共通のスタイルのボタン
+._com-btn-wrap{
+    @include _com-btn-wrap;
+}
+
+._com-btn{
+    @include _com-btn;
 }
