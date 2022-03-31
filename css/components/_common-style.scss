@@ -2,6 +2,7 @@
     color: $base-fc;
     font-size: $base-fz;
     font-family: $base-ff;
+    line-height: 1.888889em;
 }
 
 
@@ -16,6 +17,15 @@
 ._com__section-title{
     width: fit-content;
     text-align: center;
+    color: $main-color;
+    font-size: 2em;
+    font-weight: medium;
+    img{
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        width: 70px;
+    }
 }
 
 ._flex{

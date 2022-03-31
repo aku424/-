@@ -8,17 +8,31 @@ $breakpoints: (
     'han': 'screen and (max-width: 1399px)',//ハンバーガーメニューの表示用
     'xl': 'screen and (min-width: 1026px)',
 
-
+    
 ) !default;
+    
+// color
+$base-fc: #000000;
+$main-color: #2D58AF;
+$main-bgc: #F0F5FD;
+
+// font-size
+$base-fz: 16px;
+
+//font-family
+$base-ff: 'Noto Sans JP', sans-serif;
+$fv-title: fot-klee-pro, sans-serif;
 
 //メディアクエリ用のmixinを定義。デフォ値はmd
+
 @mixin mq($breakpoint: md) {
-//map-get(マップ型変数, キー)で値を取得
+    //map-get(マップ型変数, キー)で値を取得
     @media #{map-get($breakpoints, $breakpoint)} {
     //この中をカスタムできる
     @content;
     }
 }
+
 @include mq(md){
     .is-sp{
         display: none;
@@ -40,14 +54,33 @@ $breakpoints: (
     }
 }
 
-// color
-$base-fc: #000000;
-$main-color: #2D58AF;
-$main-bgc: #F0F5FD;
+//共通のスタイルのボタン
+._com-btn-wrap{
+    display: block;
+    text-align: center;
+    ._com-btn{
+        position: relative;
+        display: inline-block;
+        background-color: $main-color;
+        border-radius: 40px;
+        padding: 24px 100px;
+        color: #fff;
+        font-size: 1.125em;
+        text-decoration: none;
+        &::before{
+            position: relative;
+            display: inline-block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-right:2px solid #fff;
+            border-bottom:2px solid #fff;
+            transform: rotate(-45deg);
+            top: 50%;
+            right: -120px;
+            color: #fff;
+            
 
-// font-size
-$base-fz: 16px;
-
-//font-family
-$base-ff: 'Noto Sans JP', sans-serif;
-$fv-title: fot-klee-pro, sans-serif;
+        }
+    }
+}

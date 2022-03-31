@@ -6,7 +6,6 @@
     padding-top: 100px;
     width: 100%;
     background-color: $main-bgc;
-    margin-bottom: 100px;
 }
 
 .fv__images-wrap{
@@ -49,7 +48,7 @@
     &__txt{
         margin-top: 20px;
         font-weight: 500;
-        line-height: 1.888888em;
+        line-height: 1em;
         font-size: 1.125em;
     }
 }
@@ -58,7 +57,161 @@
                     news
 ====================================================================*/
 .news{
-    
+    background-color: $main-bgc;
+    padding-top: 100px;
+    .inner{
+    }
+    &-contents-wrap{
+        background-color: #fff;
+        padding: 60px 85px;
+        width: 100%;
+    }
+    &-contents{
+        margin-bottom: 50px;
+        align-items: center;
+    }
 }
 
+.news-contents__title-wrap{
+    width: 183.5px;
+    .news-contents__title{
+        width: 128px;
+    }
+
+}
+
+.news__lists{
+    position: relative;
+    width: calc(100% - 183.5px) ;
+    padding-left: 63px;
+    margin-bottom: -20px;
+    &::before{
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 2px;
+        background-color: $main-color;
+        transform: translate(-100%, -50%);
+        top: 50%;
+        left: 0;
+        
+    }
+    &__item{
+        margin-bottom: 20px;
+        align-items: center;
+        a{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+        }
+        &__date{
+            display: inline-block;
+            font-size: 1.125em;
+            // margin-right: 20px;
+            width: 90px;
+        }
+        &__cat{
+            background-color: $main-bgc;
+            display: inline-block;
+            padding: 6px 0;
+            text-align: center;
+            width: 104px;
+            font-size: 1em;
+            // margin-right: 30px;
+        }
+        &__title{
+            font-size: 1.125em;
+            width: calc(100% - 244px);
+        }
+    }
+}
+
+/*====================================================================
+                    ABOUT
+====================================================================*/
+.about{
+    background: rgb(240,245,253);
+    background: linear-gradient(180deg, rgba(240,245,253,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(240,245,253,1) 100%);    .inner{
+        padding-top: 133px;
+        padding-bottom: 158px;
+    }
+    .about-title{
+        margin: auto;
+        margin-bottom: 46px;
+        img{
+            width: 68px;
+        }
+    }
+}
+
+.about-contents{
+    &__item{
+        align-items: center;
+        &__text{
+            background-color: rgba(240, 245, 253, .5);
+            padding: 70px 65px;
+            p{
+                line-height: 1.94em;
+                font-size: 1.125em;
+            }
+        }
+        &__img{
+            text-align: center;
+        }
+        &:first-child{
+            .about-contents__item__text{
+                width: calc((643 / 950) * 100%);
+            }
+            .about-contents__item__img{
+                width: calc(100% - ((643 / 950) * 100%));
+                img{
+                    width: calc((172 / 307) * 100%);
+                }
+            }
+        }
+        &:nth-child(2){
+            margin-top: -25px;
+            margin-bottom: -25px;
+            .about-contents__item__text{
+                width: calc((583 / 950) * 100%);
+                p{
+                    span{
+                        color: $main-color;
+                    }
+                }
+            }
+            .about-contents__item__img{
+                width: calc(100% - ((583 / 950) * 100%));
+                img{
+                    width: calc((220 / 363) * 100%);
+                }
+            }
+        }
+        &:last-child{
+            .about-contents__item__text{
+                width: calc((746 / 950) * 100%);
+            }
+            .about-contents__item__img{
+                position: relative;
+                width: calc(100% - ((746 / 950) * 100%));
+                img{
+                    position: absolute;
+                    width: calc((161 / 204) * 100%);
+                    top:100% ;
+                    left: -20%;
+                }
+            }
+        }
+    }
+    &__odd{
+    }
+    &__even{
+        flex-direction: row-reverse;
+    }
+}
+
+/*====================================================================
+                    
+====================================================================*/
 }
