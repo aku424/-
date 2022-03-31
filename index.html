@@ -6,7 +6,11 @@
     <title></title>
     <meta name="description" content="">
     <!-- font-family -->
-    
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- noto sans JP -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
     <!-- fontawesome -->
     <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v5.6.1/css/all.css">
@@ -25,52 +29,40 @@
                     <img src="./img/com/logo.png" alt="株式会社ヘルメスのロゴ">
                 </a>
             </h1>
-        </div>
-        <div class="header-nav-wrap">
-            <div class="header-nav__ham-mark">
-                <span class="header-nav__ham-mark__line header-nav__ham-mark__top"></span>
-                <span class="header-nav__ham-mark__line header-nav__ham-mark__middle"></span>
-                <span class="header-nav__ham-mark__line header-nav__ham-mark__bottom"></span>
+            <div class="header-nav-wrap">
+                <div class="header-nav__ham-mark han">
+                    <span class="header-nav__ham-mark__line header-nav__ham-mark__top"></span>
+                    <span class="header-nav__ham-mark__line header-nav__ham-mark__middle"></span>
+                    <span class="header-nav__ham-mark__line header-nav__ham-mark__bottom"></span>
+                </div>
+                <nav class="header-nav">
+                    <ul class="header-nav__lists _flex">
+                        <li class="header-nav__lists__item">
+                            <a href="">お知らせ</a>
+                        </li>
+                        <li class="header-nav__lists__item">
+                            <a href="">私たちについて </a>
+                        </li>
+                        <li class="header-nav__lists__item">
+                            <a href="">お客さまとの4つのお約束</a>
+                        </li>
+                        <li class="header-nav__lists__item">
+                            <a href="">事業内容</a>
+                        </li>
+                        <li class="header-nav__lists__item">
+                            <a href="">会社概要</a>
+                        </li>
+                        <li class="header-nav__lists__item">
+                            <a href="">お問い合わせ</a>
+                        </li>
+                        <li class="header-nav__lists__item">
+                            <a href="">
+                                <img src="./img/com/onlineshop_btn.png" alt="オンラインショップに繋がるボタン画像">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="header-nav">
-                <ul class="header-nav__lists _flex">
-                    <li class="header-nav__lists__item">
-                        <a href="">
-                            
-                        </a>
-                    </li>
-                    <li class="header-nav__lists__item">
-                        <a href="">
-    
-                        </a>
-                    </li>
-                    <li class="header-nav__lists__item">
-                        <a href="">
-    
-                        </a>
-                    </li>
-                    <li class="header-nav__lists__item">
-                        <a href="">
-    
-                        </a>
-                    </li>
-                    <li class="header-nav__lists__item">
-                        <a href="">
-    
-                        </a>
-                    </li>
-                    <li class="header-nav__lists__item">
-                        <a href="">
-    
-                        </a>
-                    </li>
-                    <li class="header-nav__lists__item">
-                        <a href="">
-                            <img src="./img/com/onlineshop_btn.png" alt="オンラインショップに繋がるボタン画像">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </header>
     <main class="index">
@@ -89,11 +81,11 @@
                     </li> -->
                 </ul>
                 <div class="fv-text">
-                    <p class="fv-text-title"></p>
-                    <p class="fv-text-txt">
-
-                        <br>
-                        <br>
+                    <p class="fv-text__title">健康的な未来をサポート</p>
+                    <p class="fv-text__txt">
+                        私たちヘルメスは、
+                        <br>自分らしく健康的に暮らす
+                        <br>明るい未来つくりを応援します。
                     </p>
                 </div>
             </div>
@@ -105,7 +97,7 @@
                 <div class="news-contents _flex">
                     <h2 class="news-contents__title _com__section-title">
                         <img src="./img/index/news-title.png" alt="">
-
+                        お知らせ
                     </h2>
                     <ul class="news__ists">
                         <li class="news__lists__item">
@@ -115,10 +107,24 @@
                                 <h3 class="news__lists__item__title">新商品「千年謳歌」発売のお知らせ</h3>
                             </a>
                         </li>
+                        <li class="news__lists__item">
+                            <a href="">
+                                <time class="news__lists__item__date" datetime="2022.01.01">2022.01.01</time>
+                                <span class="news__lists__item__cat">新商品</span>
+                                <h3 class="news__lists__item__title">新商品「千年謳歌」発売のお知らせ</h3>
+                            </a>
+                        </li>
+                        <li class="news__lists__item">
+                            <a href="">
+                                <time class="news__lists__item__date" datetime="2021.12.20">2021.12.20</time>
+                                <span class="news__lists__item__cat">新商品</span>
+                                <h3 class="news__lists__item__title">新商品「千年謳歌」発売のお知らせ</h3>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="news-contents__btn-wrap _com-btn-wrap">
-                    <a href="" class="news-contents__btn _com-btn"></a>
+                    <a href="" class="news-contents__btn _com-btn">もっと見る</a>
                 </div>
             </div>
         </section>
@@ -128,13 +134,18 @@
             <div class="inner">
                 <h2 class="about-title _com__section-title">
                     <img src="./img/index/about-title.png" alt="">
-
+                    私たちについて
                 </h2>
                 <ul class="about-contents">
                     <il class="about-contents__item about-contents__odd _flex">
                         <div class="about-contents__item__text">
                             <p>
-
+                                私たちは「安いものを安く売る」企業ではありません。
+                                <br><br>いきなりで驚くかもしれませんが、
+                                <br><br>もちろん「高く売りつける」という意味ではありません。
+                                <br>安価な原料を低価格で販売するのではなく、
+                                <br>高品質で高価な希少素材を、リーズナブルな価格で提供する、
+                                <br>価格破壊のパイオニアに挑みます。
                             </p>
                         </div>
                         <div class="about-contents__item__img">
@@ -143,8 +154,11 @@
                     </il>
                     <il class="about-contents__item about-contents__even _flex">
                         <div class="about-contents__item__text">
+                            <span>―― 健康は1日にしてならず ――</span>
                             <p>
-
+                                健康食品は継続することが大切。
+                                <br>だからこそ、品質や食の安全性と同じくらい、
+                                <br>続けやすいコストパフォーマンスも重要視しています。
                             </p>
                         </div>
                         <div class="about-contents__item__img">
@@ -154,7 +168,12 @@
                     <il class="about-contents__item about-contents__odd _flex">
                         <div class="about-contents__item__text">
                             <p>
-
+                                さらに、私たちが寄り添いたいのは、お客様の明るい未来。
+                                <br><br>元気で楽しく、豊かな毎日をすごしていただけるよう、
+                                <br>商品の企画販売だけでなく、購入前・購入後のサポート体制を充実させ、
+                                <br>今と、これからの健康を支えていくパートナーでありたいと考えています。
+                                <br>嬉しい出来事を話したくなる、困ったときに頼りになる
+                                <br>「ご近所さん」のようなお付き合いを目指します。
                             </p>
                         </div>
                         <div class="about-contents__item__img">
@@ -170,12 +189,16 @@
             <div class="inner">
                 <h2 class="promise-title  _com__section-title">
                     <img src="./img/index/promise-title.png" alt="">
+                    お客さまとの4つのお約束
                 </h2>
-                <p class="promise-text"></p>
+                <p class="promise-text">
+                    商品の企画開発、販売に至るまで、自社で一貫して行っている企業として
+                    <br>すべての製品に対し、次の4つをお約束いたします。
+                </p>
                 <ul class="promise__contents">
                     <li class="promise-contents__item _flex">
                         <div class="promise-contents__item__text">
-                            <h3 class="promise-contents__item__text__title"></h3>
+                            <h3 class="promise-contents__item__text__title">「自分が続けたい」「家族に薦めたい」そう思える</h3>
                             <p class="promise-contents__item__text__txt"></p>
                         </div>
                         <div class="promise-contents__item__img">
@@ -188,7 +211,7 @@
                             <p class="promise-contents__item__text__txt"></p>
                         </div>
                         <div class="promise-contents__item__img">
-                            <img src="./img/index/promise01.png" alt="">
+                            <img src="./img/index/promise02.png" alt="">
                         </div>
                     </li>
                     <li class="promise-contents__item _flex">
@@ -197,7 +220,7 @@
                             <p class="promise-contents__item__text__txt"></p>
                         </div>
                         <div class="promise-contents__item__img">
-                            <img src="./img/index/promise01.png" alt="">
+                            <img src="./img/index/promise03.png" alt="">
                         </div>
                     </li>
                     <li class="promise-contents__item _flex">
@@ -206,13 +229,219 @@
                             <p class="promise-contents__item__text__txt"></p>
                         </div>
                         <div class="promise-contents__item__img">
-                            <img src="./img/index/promise01.png" alt="">
+                            <img src="./img/index/promise04.png" alt="">
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
+
+        <!-- business -->
+        <section class="business">
+            <div class="inner">
+                <h2 class="business-title  _com__section-title">
+                    <img src="./img/index/business-title.png" alt="">
+
+                </h2>
+                <p class="business-text"></p>
+                <div class="business__contents">
+                    <ul class="business__contents___lists">
+                        <li class="business__contents__lists__item">
+                            <a href="">
+                                <div class="business__contents__lists__item__img">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="business__contents__lists__item__text">
+                                    <h3 class="business__contents__lists__item__text__title"></h3>
+                                    <p class="business__contents__lists__item__text__txt"></p>
+                                    <div class="business__contents__lists__item__text _com-btn-wrap">
+                                        <a href="" class="business__contents__lists__item__text__btn _com-btn"></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="business__contents__lists__item">
+                            <a href="">
+                                <div class="business__contents__lists__item__img">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="business__contents__lists__item__text">
+                                    <h3 class="business__contents__lists__item__text__title"></h3>
+                                    <p class="business__contents__lists__item__text__txt"></p>
+                                    <div class="business__contents__lists__item__text _com-btn-wrap">
+                                        <a href="" class="business__contents__lists__item__text__btn _com-btn"></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="business__contents__lists__item">
+                            <a href="">
+                                <div class="business__contents__lists__item__img">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="business__contents__lists__item__text">
+                                    <h3 class="business__contents__lists__item__text__title"></h3>
+                                    <p class="business__contents__lists__item__text__txt"></p>
+                                    <div class="business__contents__lists__item__text _com-btn-wrap">
+                                        <a href="" class="business__contents__lists__item__text__btn _com-btn"></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="business__link _flex">
+                    <div class="business__links__item">
+                        <div class="business__links__item__mark">
+                            <span>
+                                <img src="./img/index/cart.png" alt="">
+                            </span>
+                            <h3 class="business__links__item__title"></h3>
+                            <div class="business__links__item__btn-wrap _com-btn-wrap">
+                                <a href="" class="business__links__item__btn _com-btn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business__links__item">
+                        <div class="business__links__item__mark">
+                            <span>
+                                <img src="./img/index/cart.png" alt="">
+                            </span>
+                            <h3 class="business__links__item__title"></h3>
+                            <div class="business__links__item__tell-box">
+                                <a class="business__links__item__tell" href="tel:01200000000" ></a>
+                                <p class="business__links__item__tell-time">(受付時間10:00-18:00)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--company  -->
+        <section class="company">
+            <div class="inner">
+                <h2 class="company-title  _com__section-title">
+                    <img src="./img/index/company-title.png" alt="">
+
+                </h2>
+                <ul class="company-info-contents">
+                    <li class="company-info-contents__item _flex">
+                        <p class="company-info-contents__item__label"></p>
+                        <p class="company-info-contents__item__text"></p>
+                    </li>
+                    <li class="company-info-contents__item _flex">
+                        <p class="company-info-contents__item__label"></p>
+                        <p class="company-info-contents__item__text"></p>
+                    </li>
+                    <li class="company-info-contents__item _flex">
+                        <p class="company-info-contents__item__label"></p>
+                        <p class="company-info-contents__item__text"></p>
+                    </li>
+                    <li class="company-info-contents__item _flex">
+                        <p class="company-info-contents__item__label"></p>
+                        <p class="company-info-contents__item__text"></p>
+                    </li>
+                    <li class="company-info-contents__item _flex">
+                        <p class="company-info-contents__item__label"></p>
+                        <p class="company-info-contents__item__text"></p>
+                    </li>
+                    <li class="company-info-contents__item _flex">
+                        <p class="company-info-contents__item__label"></p>
+                        <p class="company-info-contents__item__text"></p>
+                    </li>
+                </ul>
+                <div class="company__map-wrap">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact">
+            <div class="inner">
+                <h2 class="contact-title  _com__section-title">
+                    <img src="./img/index/contact-title.png" alt="">
+
+            </div>
+            <p class="contact__text">
+                <br><span>*マークは必須項目です。</span>
+            </p>
+            <form class="cocntact-form" action="">
+                <label for="" class="cocntact-form__text _com__cocntact-form__item _flex">
+                    <p lass="contact-form__text _com__contact-form__item__label">
+                        <span class="must-mark">*</span>お名前または御社名
+                    </p>
+                    <span class="contact-form__input _com__contact-form__item__input-wrap">
+                        <input class="_com__contact-form__item__input" type="text">
+                    </span>
+                </label>
+                <label for="" class="cocntact-form__text _com__cocntact-form__item _flex">
+                    <p lass="contact-form__text _com__contact-form__item__label">
+                        <span class="must-mark">*</span>メールアドレス
+                    </p>
+                    <span class="contact-form__input _com__contact-form__item__input-wrap">
+                        <input class="_com__contact-form__item__input" type="text">
+                    </span>
+                </label>
+                <label for="" class="cocntact-form__text _com__cocntact-form__item _flex">
+                    <p lass="contact-form__text _com__contact-form__item__label">
+                        お電話番号
+                    </p>
+                    <span class="contact-form__input _com__contact-form__item__input-wrap">
+                        <input class="_com__contact-form__item__input" type="text">
+                    </span>
+                </label>
+                <label for="" class="cocntact-form__text _com__cocntact-form__item _flex">
+                    <p lass="contact-form__text _com__contact-form__item__label">
+                        <span class="must-mark">*</span>*お問い合わせ内容
+                    </p>
+                    <span class="contact-form__input _com__contact-form__item__input-wrap">
+                        <textarea class="_com__contact-form__item__input"a name="" id="" cols="30" rows="10"></textarea>
+                    </span>
+                </label>
+                <p class="contact-form_privacy"><a href="">プライバシー</a>をお読みください</p>
+                <div class="contact-form__btn-wrap _com-btn-wrap">
+                    <input type="button" value="送信" class="contact-form__btn _com-btn" >
+                </div>
+            </form>
+        </section>
     </main>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <ul class="footer-lists _flex">
+                <li class="footer-lists__item">
+                    <a href=""></a>
+                </li>
+                <li class="footer-lists__item">
+                    <a href=""></a>
+                </li>
+                <li class="footer-lists__item">
+                    <a href=""></a>
+                </li>
+                <li class="footer-lists__item">
+                    <a href=""></a>
+                </li>
+                <li class="footer-lists__item">
+                    <a href=""></a>
+                </li>
+                <li class="footer-lists__item">
+                    <a href=""></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer-links _flex">
+            <a href="" class="footer-links__logo">
+                <img src="./img/com/logo.png" alt="">
+            </a>
+            <a href="" class="footer-links__online-btn">
+                <img src="./img/com/onlineshop_btn.png" alt="">
+            </a>
+        </div>
+        <p class="footer-copylight">
+            <a href="">@2022 株式会社ヘルメス</a>
+        </p>
+    </footer>
 
 
 

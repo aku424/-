@@ -2,8 +2,12 @@ $breakpoints: (
 //キー  値
     'xs': 'screen and (max-width: 376px)',
     'sm': 'screen and (max-width: 768px)', //767px以下（スマホ）用の表示
+    'smn': 'screen and (min-width: 769px)', //769px以上（PC）用の表示
     'md': 'screen and (max-width: 1025px)', //1024px以上（タブレット・PC）用の表示
-    'xl': 'screen and (min-width: 1026px)'
+    'no-han': 'screen and (min-width: 1400px)',//ハンバーガーメニューの非表示用
+    'han': 'screen and (max-width: 1399px)',//ハンバーガーメニューの表示用
+    'xl': 'screen and (min-width: 1026px)',
+
 
 ) !default;
 
@@ -20,16 +24,30 @@ $breakpoints: (
         display: none;
     }
 }
-@include mq(sm){
+@include mq(smn){
     .is-pc{
+        display: none;
+    }
+}
+@include mq(han){
+    .np-han{
+        display: none;
+    }
+}
+@include mq(no-han){
+    .han{
         display: none;
     }
 }
 
 // color
-
+$base-fc: #000000;
+$main-color: #2D58AF;
+$main-bgc: #F0F5FD;
 
 // font-size
+$base-fz: 16px;
 
-
-//font-weight
+//font-family
+$base-ff: 'Noto Sans JP', sans-serif;
+$fv-title: fot-klee-pro, sans-serif;
