@@ -59,12 +59,12 @@ $fv-title: fot-klee-pro, sans-serif;
     display: block;
     text-align: center;
 }
-@mixin _com-btn {
+@mixin _com-btn ($value) {
     position: relative;
     display: inline-block;
     background-color: $main-color;
     border-radius: 40px;
-    padding: 24px 100px;
+    padding: $value;
     color: #fff;
     font-size: 1.125em;
     text-decoration: none;
@@ -93,10 +93,3 @@ $fv-title: fot-klee-pro, sans-serif;
 
 
 //共通のスタイルのボタン
-._com-btn-wrap{
-    @include _com-btn-wrap;
-}
-
-._com-btn{
-    @include _com-btn;
-}

@@ -126,6 +126,12 @@
         }
     }
 }
+.news-contents__btn-wrap{
+    @include _com-btn-wrap;
+}
+.news-contents__btn{
+    @include _com-btn (24px 100px);
+}
 
 /*====================================================================
                     ABOUT
@@ -292,4 +298,114 @@
         }
     }
 }
+/*====================================================================
+                    business
+====================================================================*/
+.business{
+    padding-top: 168px;
+    padding-bottom: 185px;
+    @include _com-bg;
+    &-title{
+        margin: auto;
+        margin-bottom: 24px;
+        img{
+            width: 80px;
+        }
+    }
+    &-text{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+.business__contents__lists{
+    justify-content: space-between;
+    &__item{
+        position: relative;
+        background-color: $main-bgc;
+        width: calc((100% - 60px) / 3);
+        &__text{
+            padding: 15px 20px 60px 20px;
+            &__title{
+                font-size: 1.25em;
+                color: $main-color;
+                margin-bottom: 16px;
+            }
+        }
+        &__btn-wrap{
+            position: absolute;
+            transform: translate(-50%, 50%);
+            left: 50%;
+            bottom: 0%;
+            width: 100%;
+            @include _com-btn-wrap;
+            .business__contents__lists__item__btn{
+                font-size: 1.12em;
+                @include _com-btn(20px 80px);
+                &::before{
+                    right: -140px;
+                }
+            }
+        }
+    }
+}
+
+.business__links{
+    margin-top: 180px;
+    justify-content: space-between;
+    &__item{
+        position: relative;
+        width: calc((100% - 30px) / 2);
+        border: 1px solid $main-color;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 35px;
+        &__mark{
+            position: absolute;
+            display: inline-block;
+            width: 150px;
+            height: 75px;
+            border: solid 1px $main-color;
+            border-radius: 75px 75px 0 0; /* 下側を丸める */
+            border-bottom: solid 3px #fff;
+            transform: translate(-50%, -100%);
+            left: 50%;
+            top: 1px;
+            span{
+                display: block;
+                text-align: center;
+                margin-top: 32.5px;
+                img{
+                    width: 50px;
+                }
+            }
+        }
+        &__title{
+            font-size: 1.5em;
+            color: $main-color;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        &__btn-wrap{
+            @include _com-btn-wrap;
+            .business__links__item__btn{
+                @include _com-btn( 20px 50px);
+                &::before{
+                    right: -180px;
+                }
+            }
+        }
+        &__tell{
+            font-size: 2.5em;
+            color: $main-color;
+            margin-bottom: 12px;
+            text-decoration: none;
+        }
+        &__tell-time{
+            font-size: 1em;
+            font-weight: bold;
+        }
+    }
+}
+
 }
