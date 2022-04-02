@@ -186,6 +186,71 @@ img {
   top: 100%;
 }
 
+.footer {
+  padding-top: 54px;
+  padding-bottom: 19px;
+  background-color: #2D58AF;
+}
+
+.footer-inner {
+  max-width: 780px;
+  margin: auto;
+}
+
+.footer-nav {
+  margin-bottom: 50px;
+}
+
+.footer-nav .footer-lists {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-nav .footer-lists__item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.footer-links__logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  width: calc((192 / 780) * 100%);
+}
+
+.footer-links__logo img {
+  width: 100%;
+}
+
+.footer-links__online-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  width: calc((265 / 780) * 100%);
+}
+
+.footer-links__online-btn img {
+  width: 100%;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright a {
+  color: #BAD1FF;
+  font-size: 0.813em;
+  text-decoration: none;
+}
+
 /*====================================================================
                     index
 ====================================================================*/
@@ -207,6 +272,9 @@ img {
 ====================================================================*/
   /*====================================================================
                     company
+====================================================================*/
+  /*====================================================================
+                    contact
 ====================================================================*/
 }
 
@@ -369,17 +437,17 @@ img {
 }
 
 .index .news-contents__btn::before {
-  position: relative;
+  position: absolute;
   display: inline-block;
   content: "";
   width: 10px;
   height: 10px;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
   top: 50%;
-  right: -120px;
+  right: 50px;
   color: #fff;
 }
 
@@ -632,22 +700,18 @@ img {
 }
 
 .index .business__contents__lists__item__btn-wrap .business__contents__lists__item__btn::before {
-  position: relative;
+  position: absolute;
   display: inline-block;
   content: "";
   width: 10px;
   height: 10px;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
   top: 50%;
-  right: -120px;
+  right: 16px;
   color: #fff;
-}
-
-.index .business__contents__lists__item__btn-wrap .business__contents__lists__item__btn::before {
-  right: -140px;
 }
 
 .index .business__links {
@@ -712,25 +776,23 @@ img {
   color: #fff;
   font-size: 1.125em;
   text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .index .business__links__item__btn-wrap .business__links__item__btn::before {
-  position: relative;
+  position: absolute;
   display: inline-block;
   content: "";
   width: 10px;
   height: 10px;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
   top: 50%;
-  right: -120px;
+  right: 12px;
   color: #fff;
-}
-
-.index .business__links__item__btn-wrap .business__links__item__btn::before {
-  right: -180px;
 }
 
 .index .business__links__item__tell {
@@ -809,6 +871,7 @@ img {
   width: 100%;
   padding-top: 25%;
   overflow: hidden;
+  background-color: #F0F5FD;
 }
 
 .index .company__map-wrap iframe {
@@ -819,6 +882,175 @@ img {
   left: 50%;
   width: 100%;
   height: 100%;
+}
+
+.index .contact {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background-color: #F0F5FD;
+}
+
+.index .contact-title {
+  margin: auto;
+  margin-bottom: 32px;
+}
+
+.index .contact-title img {
+  width: 76px;
+}
+
+.index .contact__text {
+  font-size: 1.12em;
+  margin: auto;
+  margin-bottom: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.index .contact__text span {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  margin-top: 18px;
+  color: #2D58AF;
+  font-size: 1em;
+}
+
+.index .contact-form {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.index .contact-form ._com__contact-form__item {
+  width: calc((694 / 950) * 100%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.index .contact-form ._com__contact-form__item:last-child {
+  background-color: red;
+}
+
+.index .contact-form ._com__contact-form__item__label {
+  margin-top: 10px;
+  font-size: 1.12em;
+}
+
+.index .contact-form ._com__contact-form__item__label .must-mark {
+  color: #DD1B1B;
+}
+
+.index .contact-form ._com__contact-form__item ._com__contact-form__item__input-wrap {
+  width: calc((389 / 694) * 100%);
+}
+
+.index .contact-form ._com__contact-form__item ._com__contact-form__item__input-wrap ._com__contact-form__item__input {
+  height: 50px;
+  width: 100%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0px;
+  border-radius: 5px;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.4em 0.8em;
+}
+
+.index .contact-form .contact-form__textarea {
+  margin-bottom: 55px;
+}
+
+.index .contact-form .contact-form__textarea ._com__contact-form__item__input-wrap ._com__contact-form__item__input {
+  height: 166px;
+  resize: none;
+}
+
+.index .contact-form .contact-form_privacy {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.index .contact-form .contact-form__btn-wrap {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.index .contact-form .contact-form__btn-wrap::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  top: 50%;
+  right: 70px;
+  z-index: 1;
+  color: #fff;
+}
+
+.index .contact-form .contact-form__btn-wrap .contact-form__btn {
+  -webkit-appearance: none;
+  background-color: rgba(0, 0, 0, 0.32);
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0;
+  text-decoration: none;
+  position: relative;
+  position: relative;
+  display: inline-block;
+  background-color: #2D58AF;
+  border-radius: 40px;
+  padding: 20px 115px;
+  color: #fff;
+  font-size: 1.125em;
+  text-decoration: none;
+}
+
+.index .contact-form .contact-form__btn-wrap .contact-form__btn::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  top: 50%;
+  right: 50px;
+  color: #fff;
+}
+
+.index .contact-form .contact-form__btn-wrap .contact-form__btn:hover, .index .contact-form .contact-form__btn-wrap .contact-form__btn:focus {
+  outline: none;
+}
+
+.index .contact-form .contact-form__btn-wrap .contact-form__btn::-moz-foucus-inner {
+  border: none;
+  padding: 0;
 }
 
 /*====================================================================

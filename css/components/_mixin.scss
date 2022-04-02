@@ -59,7 +59,7 @@ $fv-title: fot-klee-pro, sans-serif;
     display: block;
     text-align: center;
 }
-@mixin _com-btn ($value) {
+@mixin _com-btn ($value, $right) {
     position: relative;
     display: inline-block;
     background-color: $main-color;
@@ -69,16 +69,16 @@ $fv-title: fot-klee-pro, sans-serif;
     font-size: 1.125em;
     text-decoration: none;
     &::before{
-        position: relative;
+        position: absolute;
         display: inline-block;
         content: "";
         width: 10px;
         height: 10px;
         border-right:2px solid #fff;
         border-bottom:2px solid #fff;
-        transform: rotate(-45deg);
+        transform: translate( -50%, -50%) rotate(-45deg);
         top: 50%;
-        right: -120px;
+        right: $right;
         color: #fff;
     }
 }

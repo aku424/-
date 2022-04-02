@@ -329,8 +329,7 @@
         </section>
         
         <!--company  -->
-        <section class="
-        ">
+        <section class="company">
             <div class="inner">
                 <h2 class="company-title  _com__section-title">
                     <img src="./img/index/company-title.png" alt="">
@@ -374,85 +373,88 @@
                 <h2 class="contact-title  _com__section-title">
                     <img src="./img/index/contact-title.png" alt="">
                     お問い合わせ
+                </h2>
+                <p class="contact__text">
+                    ご意見、ご質問、お問い合わせは下記のフォームよりお願い致します。
+                    <br><span>*マークは必須項目です。</span>
+                </p>
+                <form class="contact-form" action="">
+                    <label for="" class="contact-form__text _com__contact-form__item _flex">
+                        <p class="contact-form__text__txt _com__contact-form__item__label">
+                            <span class="must-mark">*</span>お名前または御社名
+                        </p>
+                        <span class="_com__contact-form__item__input-wrap">
+                            <input class="_com__contact-form__item__input" type="text">
+                        </span>
+                    </label>
+                    <label for="" class="contact-form__text _com__contact-form__item _flex">
+                        <p class="_com__contact-form__item__label">
+                            <span class="must-mark">*</span>メールアドレス
+                        </p>
+                        <span class="_com__contact-form__item__input-wrap">
+                            <input class="_com__contact-form__item__input" type="text">
+                        </span>
+                    </label>
+                    <label for="" class="contact-form__text _com__contact-form__item _flex">
+                        <p class=" _com__contact-form__item__label">
+                            お電話番号
+                        </p>
+                        <span class=" _com__contact-form__item__input-wrap">
+                            <input class="_com__contact-form__item__input" type="text">
+                        </span>
+                    </label>
+                    <label for="" class="contact-form__textarea _com__contact-form__item _flex">
+                        <p class="_com__contact-form__item__label">
+                            <span class="must-mark">*</span>お問い合わせ内容
+                        </p>
+                        <span class="_com__contact-form__item__input-wrap">
+                            <textarea class="_com__contact-form__item__input"a name="" id="" cols="30" rows="10"></textarea>
+                        </span>
+                    </label>
+                    <p class="contact-form_privacy"><a href="">※プライバシーポリシー</a>をお読みください</p>
+                    <div class="contact-form__btn-wrap">
+                        <input type="button" value="送信" class="contact-form__btn" >
+                    </div>
+                </form>
             </div>
-            <p class="contact__text">
-                ご意見、ご質問、お問い合わせは下記のフォームよりお願い致します。
-                <br><span>*マークは必須項目です。</span>
-            </p>
-            <form class="cocntact-form" action="">
-                <label for="" class="cocntact-form__text _com__cocntact-form__item _flex">
-                    <p lass="contact-form__text _com__contact-form__item__label">
-                        <span class="must-mark">*</span>お名前または御社名
-                    </p>
-                    <span class="contact-form__input _com__contact-form__item__input-wrap">
-                        <input class="_com__contact-form__item__input" type="text">
-                    </span>
-                </label>
-                <label for="" class="cocntact-form__text _com__cocntact-form__item _flex">
-                    <p lass="contact-form__text _com__contact-form__item__label">
-                        <span class="must-mark">*</span>メールアドレス
-                    </p>
-                    <span class="contact-form__input _com__contact-form__item__input-wrap">
-                        <input class="_com__contact-form__item__input" type="text">
-                    </span>
-                </label>
-                <label for="" class="cocntact-form__text _com__cocntact-form__item _flex">
-                    <p lass="contact-form__text _com__contact-form__item__label">
-                        お電話番号
-                    </p>
-                    <span class="contact-form__input _com__contact-form__item__input-wrap">
-                        <input class="_com__contact-form__item__input" type="text">
-                    </span>
-                </label>
-                <label for="" class="cocntact-form__text _com__cocntact-form__item _flex">
-                    <p lass="contact-form__text _com__contact-form__item__label">
-                        <span class="must-mark">*</span>*お問い合わせ内容
-                    </p>
-                    <span class="contact-form__input _com__contact-form__item__input-wrap">
-                        <textarea class="_com__contact-form__item__input"a name="" id="" cols="30" rows="10"></textarea>
-                    </span>
-                </label>
-                <p class="contact-form_privacy"><a href="">プライバシー</a>をお読みください</p>
-                <div class="contact-form__btn-wrap _com-btn-wrap">
-                    <input type="button" value="送信" class="contact-form__btn _com-btn" >
-                </div>
-            </form>
         </section>
     </main>
     <footer class="footer">
-        <nav class="footer-nav">
-            <ul class="footer-lists _flex">
-                <li class="footer-lists__item">
-                    <a href=""></a>
-                </li>
-                <li class="footer-lists__item">
-                    <a href=""></a>
-                </li>
-                <li class="footer-lists__item">
-                    <a href=""></a>
-                </li>
-                <li class="footer-lists__item">
-                    <a href=""></a>
-                </li>
-                <li class="footer-lists__item">
-                    <a href=""></a>
-                </li>
-                <li class="footer-lists__item">
-                    <a href=""></a>
-                </li>
-            </ul>
-        </nav>
-        <div class="footer-links _flex">
-            <a href="" class="footer-links__logo">
-                <img src="./img/com/logo.png" alt="">
-            </a>
-            <a href="" class="footer-links__online-btn">
-                <img src="./img/com/onlineshop_btn.png" alt="">
-            </a>
+        <div class="footer-inner">
+            <nav class="footer-nav">
+                <ul class="footer-lists _flex">
+                    <li class="footer-lists__item">
+                        <a href="">お知らせ</a>
+                    </li>
+                    <li class="footer-lists__item">
+                        <a href="">私たちについて</a>
+                    </li>
+                    <li class="footer-lists__item">
+                        <a href="">お客さまとの4つのお約束</a>
+                    </li>
+                    <li class="footer-lists__item">
+                        <a href="">事業内容</a>
+                    </li>
+                    <li class="footer-lists__item">
+                        <a href="">会社概要</a>
+                    </li>
+                    <li class="footer-lists__item">
+                        <a href="">お問い合わせ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-links _flex">
+                <a href="" class="footer-links__logo">
+                    <img src="./img/com/footer-logo.png" alt="">
+                </a>
+                <a href="" class="footer-links__online-btn">
+                    <img src="./img/com/onlineshop_btn.png" alt="">
+                </a>
+            </div>
+            <p class="footer-copyright">
+                <a href="">@2022 株式会社ヘルメス</a>
+            </p>
         </div>
-        <p class="footer-copylight">
-            <a href="">@2022 株式会社ヘルメス</a>
-        </p>
     </footer>
 
 

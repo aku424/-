@@ -130,7 +130,7 @@
     @include _com-btn-wrap;
 }
 .news-contents__btn{
-    @include _com-btn (24px 100px);
+    @include _com-btn (24px 100px ,50px);
 }
 
 /*====================================================================
@@ -341,10 +341,7 @@
             @include _com-btn-wrap;
             .business__contents__lists__item__btn{
                 font-size: 1.12em;
-                @include _com-btn(20px 80px);
-                &::before{
-                    right: -140px;
-                }
+                @include _com-btn(20px 80px ,16px);
             }
         }
     }
@@ -389,9 +386,10 @@
         &__btn-wrap{
             @include _com-btn-wrap;
             .business__links__item__btn{
-                @include _com-btn( 20px 50px);
+                @include _com-btn( 20px 50px, 12px);
+                padding-top: 15px;
+                padding-bottom: 15px;
                 &::before{
-                    right: -180px;
                 }
             }
         }
@@ -465,6 +463,7 @@
     width: 100%;
     padding-top: 25%;
     overflow: hidden;
+    background-color: $main-bgc;
     iframe{
         position: absolute;
         transform: translate(-50%, -50%);
@@ -476,4 +475,132 @@
     }
 }
 
+/*====================================================================
+                    contact
+====================================================================*/
+.contact{
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background-color: $main-bgc;
+    &-title{
+        margin: auto;
+        margin-bottom: 32px;
+        img{
+            width: 76px;
+        }
+    }
+    &__text{
+        font-size: 1.12em;
+        margin: auto;
+        margin-bottom: 50px;
+        width: fit-content;
+        span{
+            display: inline-block;
+            width: 100%;
+            text-align: right;
+            
+            margin-top: 18px;
+            color: $main-color;
+            font-size: 1em;
+        }
+    }
+}
+
+.contact-form{
+    background-color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    ._com__contact-form__item{
+        width: calc((694 / 950) * 100%);
+        justify-content: space-between;
+        margin: auto;
+        margin-bottom: 40px;
+        &:last-child{
+           background-color: red;
+        }
+        &__label{
+            margin-top: 10px;
+            font-size: 1.12em;
+            .must-mark{
+                color: #DD1B1B;
+            }
+        }
+        ._com__contact-form__item__input-wrap{
+            width: calc((389 / 694) * 100%);
+            ._com__contact-form__item__input{
+                height: 50px;
+                width: 100%;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                appearance: none;
+                background-color: transparent;
+                background-image: none;
+                border: 1px solid rgba(0, 0, 0, 0.16);
+                border-radius: 0px;
+                border-radius: 5px;
+                color: inherit;
+                font-family: inherit;
+                font-size: 1em;
+                padding: 0.4em 0.8em;
+            }
+        }
+    }
+    .contact-form__textarea{
+        margin-bottom: 55px;
+        ._com__contact-form__item__input-wrap{
+            ._com__contact-form__item__input{
+                height: 166px;
+                resize: none;
+            }
+        }
+    }
+    .contact-form_privacy{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .contact-form__btn-wrap{
+        position: relative;
+        width: fit-content;
+        margin: auto;
+        @include _com-btn-wrap;
+        &::before{
+            position: absolute;
+            display: inline-block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-right:2px solid #fff;
+            border-bottom:2px solid #fff;
+            transform:translate(-50%, -50%) rotate(-45deg);
+            top: 50%;
+            right: 70px;
+            z-index: 1;
+            color: #fff;
+        }
+        .contact-form__btn{
+            -webkit-appearance: none;
+            background-color: rgba(0, 0, 0, 0.32);
+            background-image: none;
+            border: none;
+            border-radius: 0;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 1em;
+            margin: 0;
+            text-decoration: none;
+            position: relative;
+            
+            @include _com-btn(20px 115px, 50px);
+            &:hover,
+            &:focus{
+                outline: none;
+            }
+            &::-moz-foucus-inner {
+                border: none;
+                padding: 0;
+            }
+        }
+    }
+}
 }
