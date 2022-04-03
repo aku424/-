@@ -8,17 +8,31 @@ $breakpoints: (
     'han': 'screen and (max-width: 1399px)',//ハンバーガーメニューの表示用
     'xl': 'screen and (min-width: 1026px)',
 
-
+    
 ) !default;
+    
+// color
+$base-fc: #000000;
+$main-color: #2D58AF;
+$main-bgc: #F0F5FD;
+
+// font-size
+$base-fz: 16px;
+
+//font-family
+$base-ff: 'Noto Sans JP', sans-serif;
+$fv-title: fot-klee-pro, sans-serif;
 
 //メディアクエリ用のmixinを定義。デフォ値はmd
+
 @mixin mq($breakpoint: md) {
-//map-get(マップ型変数, キー)で値を取得
+    //map-get(マップ型変数, キー)で値を取得
     @media #{map-get($breakpoints, $breakpoint)} {
     //この中をカスタムできる
     @content;
     }
 }
+
 @include mq(md){
     .is-sp{
         display: none;
@@ -40,14 +54,42 @@ $breakpoints: (
     }
 }
 
-// color
-$base-fc: #000000;
-$main-color: #2D58AF;
-$main-bgc: #F0F5FD;
+//////共通デザイン//////
+@mixin _com-btn-wrap {
+    display: block;
+    text-align: center;
+}
+@mixin _com-btn ($value, $right) {
+    position: relative;
+    display: inline-block;
+    background-color: $main-color;
+    border-radius: 40px;
+    padding: $value;
+    color: #fff;
+    font-size: 1.125em;
+    text-decoration: none;
+    &::before{
+        position: absolute;
+        display: inline-block;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right:2px solid #fff;
+        border-bottom:2px solid #fff;
+        transform: translate( -50%, -50%) rotate(-45deg);
+        top: 50%;
+        right: $right;
+        color: #fff;
+    }
+}
 
-// font-size
-$base-fz: 16px;
 
-//font-family
-$base-ff: 'Noto Sans JP', sans-serif;
-$fv-title: fot-klee-pro, sans-serif;
+//グラデーション背景
+@mixin _com-bg{
+    background: rgb(240,245,253);
+    background: linear-gradient(180deg, rgba(240,245,253,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(240,245,253,1) 100%);
+}
+
+
+
+//共通のスタイルのボタン

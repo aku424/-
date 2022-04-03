@@ -1,0 +1,132 @@
+.archive{
+    .a-container{
+        padding-bottom: 120px;
+    }
+/*====================================================================
+                    表示カテゴリーの切り替えボタン
+====================================================================*/
+.a__tab-lists{
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid $main-color;
+    margin-bottom: 60px;
+    &__item{
+        width: calc((100% - 40px) / 3);
+        background-color: #fff;
+        padding-top: 21px;
+        padding-bottom: 16px;
+        text-align: center;
+        h2{
+            color: $base-fc;
+            font-size: 1.12em;
+        }
+    }
+    &>._active{
+        position: relative;
+        border-top: 4px solid $main-color;
+        border-right: 1px solid $main-color;
+        border-left: 1px solid $main-color;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            transform: translate(-50%, 100%);
+            left: 50%;
+            bottom: 0px;
+        }
+    }
+}
+
+/*====================================================================
+                    年代別カテゴリー
+====================================================================*/
+/*jsでクリックされた年代のボタンと同じ年代の一覧を表示*/
+/*tag__20xxクラスに_activeをjsで追加する*/  
+.a__lists-wrap{
+    display: none;
+}
+
+.a__lists-wrap-container{
+    ._active{
+        display: block;
+    }
+}
+
+.a__lists{
+    margin-bottom: 60px;
+    &__item{
+        background-color: #fff;
+        margin-bottom: 40px;
+        a{
+            display: block;
+            padding: 60px;
+            text-decoration: none;
+        }
+        &__info{
+            margin-bottom: 30px;
+            time{
+                font-size: 1.12em;
+                padding-right: 22px;
+                line-height: 1;
+            }
+            span{
+                display: inline-block;
+                line-height: 1;
+                padding: 6px 25px;
+                background-color: $main-bgc;
+            }
+        }
+        &__title{
+            line-height: 1;
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        &__contents{
+            width: 100%;
+            &__img{
+                width: calc(100% - ((575 / 830) * 100%));
+                
+            }
+            &__text{
+                padding-left: 30px;
+                width: calc((575 / 830) * 100%);
+                p{
+                    font-size: 1.12em;
+                    line-height: 1.94444em;
+                }
+            }
+        }
+    }
+}
+
+.pagination{
+    &__lists{
+        margin-right: -10px;
+        justify-content: center;
+        &__item{
+            margin-right: 10px;
+            width: 40px;
+            background-color: #fff;
+            text-align: center;
+            border: 1px solid #D3D3D3;
+
+            a{
+                display: block;
+                padding-top: 11px;
+                padding-bottom: 11px;
+                font-size: 0.938em;
+                text-decoration: none;
+            }
+        }
+        &>._active{
+            border: 1px solid $main-color;
+            background-color: $main-color;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+}

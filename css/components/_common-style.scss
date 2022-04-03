@@ -2,6 +2,12 @@
     color: $base-fc;
     font-size: $base-fz;
     font-family: $base-ff;
+    line-height: 1.888889em;
+}
+
+main{
+    padding-top: 100px;
+    background-color: $main-bgc;
 }
 
 
@@ -16,10 +22,47 @@
 ._com__section-title{
     width: fit-content;
     text-align: center;
+    color: $main-color;
+    font-size: 2em;
+    font-weight: medium;
+    img{
+        display: block;
+        margin: auto;
+        margin-bottom: 0px;
+        width: 70px;
+    }
 }
 
 ._flex{
     display: flex;
+}
+
+._new-line{
+    display: inline-block;
+}
+
+.page-title-wrap{
+    text-align: center;
+    margin-top: 99px;
+    margin-bottom: 83px;
+    .page-title{
+        position: relative;
+        font-size: 2em;
+        font-weight: medium;
+        line-height: 1;
+        color:  $main-color;
+        &::before{
+            position: absolute;
+            content: "";
+            transform: translate(-50%, -50%);
+            left: 50%;
+            height: 3px;
+            width: 15px;
+            border-radius: 1.5px;
+            background-color: $main-color;
+            bottom: -20px;
+        }
+    }
 }
 
 // header
@@ -87,6 +130,57 @@
     &__top{
         transform: translateY(-100%);
         top:100% ;
+    }
+}
+
+//footer
+.footer{
+    padding-top: 42px;
+    padding-bottom: 19px;
+    background-color: $main-color;
+    &-inner{
+        max-width: 797px;
+        margin: auto;
+    }
+    &-nav{
+        margin-bottom: 40px;
+        .footer-lists{
+            justify-content: space-between;
+            &__item{
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: medium;
+                }
+            }
+        }
+    }
+    &-links{
+        justify-content: space-between;
+        margin-bottom: 0px;
+        align-items: center;
+        &__logo{
+            width: fit-content;
+            width: calc((192 / 797) * 100%);
+            img{
+                width: 100%;
+            }
+        }
+        &__online-btn{
+            width: fit-content;
+            width: calc((270 / 797) * 100%);
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &-copyright{
+        text-align: center;
+        a{
+            color: #BAD1FF;
+            font-size: 0.813em;
+            text-decoration: none;
+        }
     }
 }
 

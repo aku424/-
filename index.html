@@ -94,37 +94,41 @@
         <!-- お知らせ -->
         <section class="news">
             <div class="inner">
-                <div class="news-contents _flex">
-                    <h2 class="news-contents__title _com__section-title">
-                        <img src="./img/index/news-title.png" alt="">
-                        お知らせ
-                    </h2>
-                    <ul class="news__ists">
-                        <li class="news__lists__item">
-                            <a href="">
-                                <time class="news__lists__item__date" datetime="2022.02.01">2022.02.01</time>
-                                <span class="news__lists__item__cat">新商品</span>
-                                <h3 class="news__lists__item__title">新商品「千年謳歌」発売のお知らせ</h3>
-                            </a>
-                        </li>
-                        <li class="news__lists__item">
-                            <a href="">
-                                <time class="news__lists__item__date" datetime="2022.01.01">2022.01.01</time>
-                                <span class="news__lists__item__cat">新商品</span>
-                                <h3 class="news__lists__item__title">新商品「千年謳歌」発売のお知らせ</h3>
-                            </a>
-                        </li>
-                        <li class="news__lists__item">
-                            <a href="">
-                                <time class="news__lists__item__date" datetime="2021.12.20">2021.12.20</time>
-                                <span class="news__lists__item__cat">新商品</span>
-                                <h3 class="news__lists__item__title">新商品「千年謳歌」発売のお知らせ</h3>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="news-contents__btn-wrap _com-btn-wrap">
-                    <a href="" class="news-contents__btn _com-btn">もっと見る</a>
+                <div class="news-contents-wrap">
+                    <div class="news-contents _flex">
+                        <div class="news-contents__title-wrap">
+                            <h2 class="news-contents__title _com__section-title">
+                                <img src="./img/index/news-title.png" alt="">
+                                お知らせ
+                            </h2>
+                        </div>
+                        <ul class="news__lists">
+                            <li class="news__lists__item">
+                                <a href="">
+                                    <time class="news__lists__item__date" datetime="2022.02.01">2022.02.01</time>
+                                    <span class="news__lists__item__cat">新商品</span>
+                                    <h3 class="news__lists__item__title">新商品「千年謳歌」発売のお知らせ</h3>
+                                </a>
+                            </li>
+                            <li class="news__lists__item">
+                                <a href="">
+                                    <time class="news__lists__item__date" datetime="2022.01.01">2022.01.01</time>
+                                    <span class="news__lists__item__cat">新商品</span>
+                                    <h3 class="news__lists__item__title">新商品「千年謳歌」発売のお知らせ</h3>
+                                </a>
+                            </li>
+                            <li class="news__lists__item">
+                                <a href="">
+                                    <time class="news__lists__item__date" datetime="2021.12.20">2021.12.20</time>
+                                    <span class="news__lists__item__cat">新商品</span>
+                                    <h3 class="news__lists__item__title">新商品「千年謳歌」発売のお知らせ</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="news-contents__btn-wrap">
+                        <a href="" class="news-contents__btn">もっと見る</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -142,8 +146,8 @@
                             <p>
                                 私たちは「安いものを安く売る」企業ではありません。
                                 <br><br>いきなりで驚くかもしれませんが、
-                                <br><br>もちろん「高く売りつける」という意味ではありません。
-                                <br>安価な原料を低価格で販売するのではなく、
+                                <br>もちろん「高く売りつける」という意味ではありません。
+                                <br><br>安価な原料を低価格で販売するのではなく、
                                 <br>高品質で高価な希少素材を、リーズナブルな価格で提供する、
                                 <br>価格破壊のパイオニアに挑みます。
                             </p>
@@ -154,9 +158,9 @@
                     </il>
                     <il class="about-contents__item about-contents__even _flex">
                         <div class="about-contents__item__text">
-                            <span>―― 健康は1日にしてならず ――</span>
                             <p>
-                                健康食品は継続することが大切。
+                                <span>―― 健康は1日にしてならず ――</span>
+                                <br><br>健康食品は継続することが大切。
                                 <br>だからこそ、品質や食の安全性と同じくらい、
                                 <br>続けやすいコストパフォーマンスも重要視しています。
                             </p>
@@ -172,7 +176,7 @@
                                 <br><br>元気で楽しく、豊かな毎日をすごしていただけるよう、
                                 <br>商品の企画販売だけでなく、購入前・購入後のサポート体制を充実させ、
                                 <br>今と、これからの健康を支えていくパートナーでありたいと考えています。
-                                <br>嬉しい出来事を話したくなる、困ったときに頼りになる
+                                <br><br>嬉しい出来事を話したくなる、困ったときに頼りになる
                                 <br>「ご近所さん」のようなお付き合いを目指します。
                             </p>
                         </div>
@@ -195,11 +199,14 @@
                     商品の企画開発、販売に至るまで、自社で一貫して行っている企業として
                     <br>すべての製品に対し、次の4つをお約束いたします。
                 </p>
-                <ul class="promise__contents">
+                <ul class="promise-contents">
                     <li class="promise-contents__item _flex">
                         <div class="promise-contents__item__text">
-                            <h3 class="promise-contents__item__text__title">「自分が続けたい」「家族に薦めたい」そう思える</h3>
-                            <p class="promise-contents__item__text__txt"></p>
+                            <h3 class="promise-contents__item__text__title"><span class="_new-line">「自分が続けたい」</span><span class="_new-line">「家族に薦めたい」</span><span class="_new-line">そう思える製品だけを作ります</span></h3>
+                            <p class="promise-contents__item__text__txt">
+                                学術論文や専門誌などを参考に、新しく発見された素材を積極的に調査。
+                                <br>話題性だけでなくデータやエビデンスも調べ、自分達が続けたいと思える<span>機能性</span>、家族に薦めたいと思える<span>安全性</span>を軸に、商品の企画開発をおこないます。
+                            </p><br>
                         </div>
                         <div class="promise-contents__item__img">
                             <img src="./img/index/promise01.png" alt="">
@@ -207,8 +214,12 @@
                     </li>
                     <li class="promise-contents__item _flex">
                         <div class="promise-contents__item__text">
-                            <h3 class="promise-contents__item__text__title"></h3>
-                            <p class="promise-contents__item__text__txt"></p>
+                            <h3 class="promise-contents__item__text__title"><span class="_new-line">原料の仕入れから製造、</span><span class="_new-line">販売まで</span><span class="_new-line">安心・安全の品質管理</span><span class="_new-line">を徹底します</span></h3>
+                            <p class="promise-contents__item__text__txt">
+                                配合成分の原料選びから仕入れ、発注も<span>すべて自社で担当。</span>
+                                <br>製造も日本国内の安全・品質が管理された工場で行い、中間業者をはさまない流通を確保しています。
+                                <br>お届けする商品は、徹底管理の中で<span>全ての検査に合格した商品です。</span>
+                            </p>
                         </div>
                         <div class="promise-contents__item__img">
                             <img src="./img/index/promise02.png" alt="">
@@ -216,8 +227,10 @@
                     </li>
                     <li class="promise-contents__item _flex">
                         <div class="promise-contents__item__text">
-                            <h3 class="promise-contents__item__text__title"></h3>
-                            <p class="promise-contents__item__text__txt"></p>
+                            <h3 class="promise-contents__item__text__title"><span class="_new-line">ムダを抑えた</span><span class="_new-line">コストカットで</span><span class="_new-line">製品の品質維持・向上に<span class="_new-line"></span>取り組みます</span></h3>
+                            <p class="promise-contents__item__text__txt">
+                                自社でのラベル製造や簡易エコ包装など、製品の品質を維持したコストカットで、<span>リーズナブルな価格を実現。</span> また弊社の販売実績をもとに、メーカーとの原料価格を交渉し、配合量の増量、商品の改良といった品質向上にも努めています。
+                            </p>
                         </div>
                         <div class="promise-contents__item__img">
                             <img src="./img/index/promise03.png" alt="">
@@ -225,8 +238,12 @@
                     </li>
                     <li class="promise-contents__item _flex">
                         <div class="promise-contents__item__text">
-                            <h3 class="promise-contents__item__text__title"></h3>
-                            <p class="promise-contents__item__text__txt"></p>
+                            <h3 class="promise-contents__item__text__title"><span class="_new-line">ご購入前の</span><span class="_new-line">相談・ご注文など</span><span class="_new-line">電話対応も承ります</span><span class="_new-line">こちらから引き留めや勧誘は</span><span class="_new-line">致しません</span></h3>
+                            <p class="promise-contents__item__text__txt">
+                                時間や場所にとらわれず注文できるのが、ネット通販の魅力ですが、安心してお買い物していただけるよう、電話でのご注文も可能です。
+                                <br>商品に関する質問はもちろん、購入後の相談も承っています。
+                                <br><span>解約の引き留めや強引な勧誘、営業電話などはいたしませんのでご安心ください。</span>
+                            </p>
                         </div>
                         <div class="promise-contents__item__img">
                             <img src="./img/index/promise04.png" alt="">
@@ -241,78 +258,70 @@
             <div class="inner">
                 <h2 class="business-title  _com__section-title">
                     <img src="./img/index/business-title.png" alt="">
-
+                    事業内容
                 </h2>
-                <p class="business-text"></p>
+                <p class="business-text">健康食品・サプリメントの企画開発、販売を手掛けています</p>
                 <div class="business__contents">
-                    <ul class="business__contents___lists">
+                    <ul class="business__contents__lists _flex">
                         <li class="business__contents__lists__item">
-                            <a href="">
-                                <div class="business__contents__lists__item__img">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="business__contents__lists__item__text">
-                                    <h3 class="business__contents__lists__item__text__title"></h3>
-                                    <p class="business__contents__lists__item__text__txt"></p>
-                                    <div class="business__contents__lists__item__text _com-btn-wrap">
-                                        <a href="" class="business__contents__lists__item__text__btn _com-btn"></a>
-                                    </div>
-                                </div>
-                            </a>
+                            <div class="business__contents__lists__item__img">
+                                <img src="./img/business01.png" alt="">
+                            </div>
+                            <div class="business__contents__lists__item__text">
+                                <h3 class="business__contents__lists__item__text__title">nonlie NMN200</h3>
+                                <p class="business__contents__lists__item__text__txt">国内製造NMNを1粒に200mgを配合した日本製NMNサプリメント</p>
+                            </div>
+                            <div class="business__contents__lists__item__btn-wrap">
+                                <a href="" class="business__contents__lists__item__btn">詳しく見る</a>
+                            </div>
                         </li>
                         <li class="business__contents__lists__item">
-                            <a href="">
-                                <div class="business__contents__lists__item__img">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="business__contents__lists__item__text">
-                                    <h3 class="business__contents__lists__item__text__title"></h3>
-                                    <p class="business__contents__lists__item__text__txt"></p>
-                                    <div class="business__contents__lists__item__text _com-btn-wrap">
-                                        <a href="" class="business__contents__lists__item__text__btn _com-btn"></a>
-                                    </div>
-                                </div>
-                            </a>
+                            <div class="business__contents__lists__item__img">
+                                <img src="./img/business02.png" alt="">
+                            </div>
+                            <div class="business__contents__lists__item__text">
+                                <h3 class="business__contents__lists__item__text__title">千年謳歌</h3>
+                                <p class="business__contents__lists__item__text__txt">NMN、5-ALA、コエンザイムQ10を独自ブレンドしたオールインワンサプリメント</p>
+                            </div>
+                            <div class="business__contents__lists__item__btn-wrap">
+                                <a href="" class="business__contents__lists__item__btn">詳しく見る</a>
+                            </div>
                         </li>
                         <li class="business__contents__lists__item">
-                            <a href="">
-                                <div class="business__contents__lists__item__img">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="business__contents__lists__item__text">
-                                    <h3 class="business__contents__lists__item__text__title"></h3>
-                                    <p class="business__contents__lists__item__text__txt"></p>
-                                    <div class="business__contents__lists__item__text _com-btn-wrap">
-                                        <a href="" class="business__contents__lists__item__text__btn _com-btn"></a>
-                                    </div>
-                                </div>
-                            </a>
+                            <div class="business__contents__lists__item__img">
+                                <img src="./img/business03.png" alt="">
+                            </div>
+                            <div class="business__contents__lists__item__text">
+                                <h3 class="business__contents__lists__item__text__title">Nonlie プロテイン＆コラーゲンスティックゼリー</h3>
+                                <p class="business__contents__lists__item__text__txt">低分子コラーゲンペプチドを1本に3,500mg配合したスティックゼリー</p>
+                            </div>
+                            <div class="business__contents__lists__item__btn-wrap">
+                                <a href="" class="business__contents__lists__item__btn">詳しく見る</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
-                <div class="business__link _flex">
+                <div class="business__links _flex">
                     <div class="business__links__item">
                         <div class="business__links__item__mark">
                             <span>
                                 <img src="./img/index/cart.png" alt="">
                             </span>
-                            <h3 class="business__links__item__title"></h3>
-                            <div class="business__links__item__btn-wrap _com-btn-wrap">
-                                <a href="" class="business__links__item__btn _com-btn"></a>
-                            </div>
+                        </div>
+                        <h3 class="business__links__item__title">オンラインショップはこちら</h3>
+                        <div class="business__links__item__btn-wrap">
+                            <a href="" class="business__links__item__btn">ショップへ移動する</a>
                         </div>
                     </div>
                     <div class="business__links__item">
                         <div class="business__links__item__mark">
                             <span>
-                                <img src="./img/index/cart.png" alt="">
+                                <img src="./img/index/phone.png" alt="">
                             </span>
-                            <h3 class="business__links__item__title"></h3>
-                            <div class="business__links__item__tell-box">
-                                <a class="business__links__item__tell" href="tel:01200000000" ></a>
-                                <p class="business__links__item__tell-time">(受付時間10:00-18:00)</p>
-                            </div>
                         </div>
+                        <h3 class="business__links__item__title">お電話でのご注文はこちら</h3>
+                        <a class="business__links__item__tell" href="tel:01200000000" >0120-000-0000</a>
+                        <p class="business__links__item__tell-time">(受付時間10:00-18:00)</p>
                     </div>
                 </div>
             </div>
@@ -323,37 +332,37 @@
             <div class="inner">
                 <h2 class="company-title  _com__section-title">
                     <img src="./img/index/company-title.png" alt="">
-
+                    会社情報
                 </h2>
                 <ul class="company-info-contents">
                     <li class="company-info-contents__item _flex">
-                        <p class="company-info-contents__item__label"></p>
-                        <p class="company-info-contents__item__text"></p>
+                        <p class="company-info-contents__item__label">会社名</p>
+                        <p class="company-info-contents__item__text">株式会社ヘルメス</p>
                     </li>
                     <li class="company-info-contents__item _flex">
-                        <p class="company-info-contents__item__label"></p>
-                        <p class="company-info-contents__item__text"></p>
+                        <p class="company-info-contents__item__label">代表者</p>
+                        <p class="company-info-contents__item__text">福岡　洋平 (Fukuoka Youhei)</p>
                     </li>
                     <li class="company-info-contents__item _flex">
-                        <p class="company-info-contents__item__label"></p>
-                        <p class="company-info-contents__item__text"></p>
+                        <p class="company-info-contents__item__label">所在地</p>
+                        <p class="company-info-contents__item__text">〒542-0081<br>大阪府大阪市中央区南船場4-7-15 TAG南船場ビル7F</p>
                     </li>
                     <li class="company-info-contents__item _flex">
-                        <p class="company-info-contents__item__label"></p>
-                        <p class="company-info-contents__item__text"></p>
+                        <p class="company-info-contents__item__label">設立</p>
+                        <p class="company-info-contents__item__text">平成20年1月25日</p>
                     </li>
                     <li class="company-info-contents__item _flex">
-                        <p class="company-info-contents__item__label"></p>
-                        <p class="company-info-contents__item__text"></p>
+                        <p class="company-info-contents__item__label">資本金</p>
+                        <p class="company-info-contents__item__text">1,000万円</p>
                     </li>
                     <li class="company-info-contents__item _flex">
-                        <p class="company-info-contents__item__label"></p>
-                        <p class="company-info-contents__item__text"></p>
+                        <p class="company-info-contents__item__label">取引先銀行</p>
+                        <p class="company-info-contents__item__text">三菱東京UFJ銀行 築港支店 / 楽天銀行 マーチ支店</p>
                     </li>
                 </ul>
-                <div class="company__map-wrap">
-
-                </div>
+            </div>
+            <div class="company__map-wrap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1499.714169680805!2d135.4990248686781!3d34.67652828158666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e71b06330dcf%3A0xaceee1e83e695633!2z44CSNTQyLTAwODEg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy65Y2X6Ii55aC077yU5LiB55uu77yX4oiS77yR77yVIFRhZ-WNl-iIueWgtOODk-ODqyA3Zg!5e0!3m2!1sja!2sjp!4v1648872561811!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
@@ -362,85 +371,89 @@
             <div class="inner">
                 <h2 class="contact-title  _com__section-title">
                     <img src="./img/index/contact-title.png" alt="">
-
+                    お問い合わせ
+                </h2>
+                <p class="contact__text">
+                    ご意見、ご質問、お問い合わせは下記のフォームよりお願い致します。
+                    <br><span>*マークは必須項目です。</span>
+                </p>
+                <form class="contact-form" action="">
+                    <label for="" class="contact-form__text _com__contact-form__item _flex">
+                        <p class="contact-form__text__txt _com__contact-form__item__label">
+                            <span class="must-mark">*</span>お名前または御社名
+                        </p>
+                        <span class="_com__contact-form__item__input-wrap">
+                            <input class="_com__contact-form__item__input" type="text">
+                        </span>
+                    </label>
+                    <label for="" class="contact-form__text _com__contact-form__item _flex">
+                        <p class="_com__contact-form__item__label">
+                            <span class="must-mark">*</span>メールアドレス
+                        </p>
+                        <span class="_com__contact-form__item__input-wrap">
+                            <input class="_com__contact-form__item__input" type="text">
+                        </span>
+                    </label>
+                    <label for="" class="contact-form__text _com__contact-form__item _flex">
+                        <p class=" _com__contact-form__item__label">
+                            お電話番号
+                        </p>
+                        <span class=" _com__contact-form__item__input-wrap">
+                            <input class="_com__contact-form__item__input" type="text">
+                        </span>
+                    </label>
+                    <label for="" class="contact-form__textarea _com__contact-form__item _flex">
+                        <p class="_com__contact-form__item__label">
+                            <span class="must-mark">*</span>お問い合わせ内容
+                        </p>
+                        <span class="_com__contact-form__item__input-wrap">
+                            <textarea class="_com__contact-form__item__input"a name="" id="" cols="30" rows="10"></textarea>
+                        </span>
+                    </label>
+                    <p class="contact-form_privacy"><a href="">※プライバシーポリシー</a>をお読みください</p>
+                    <div class="contact-form__btn-wrap">
+                        <input type="button" value="送信する" class="contact-form__btn" >
+                    </div>
+                </form>
             </div>
-            <p class="contact__text">
-                <br><span>*マークは必須項目です。</span>
-            </p>
-            <form class="cocntact-form" action="">
-                <label for="" class="cocntact-form__text _com__cocntact-form__item _flex">
-                    <p lass="contact-form__text _com__contact-form__item__label">
-                        <span class="must-mark">*</span>お名前または御社名
-                    </p>
-                    <span class="contact-form__input _com__contact-form__item__input-wrap">
-                        <input class="_com__contact-form__item__input" type="text">
-                    </span>
-                </label>
-                <label for="" class="cocntact-form__text _com__cocntact-form__item _flex">
-                    <p lass="contact-form__text _com__contact-form__item__label">
-                        <span class="must-mark">*</span>メールアドレス
-                    </p>
-                    <span class="contact-form__input _com__contact-form__item__input-wrap">
-                        <input class="_com__contact-form__item__input" type="text">
-                    </span>
-                </label>
-                <label for="" class="cocntact-form__text _com__cocntact-form__item _flex">
-                    <p lass="contact-form__text _com__contact-form__item__label">
-                        お電話番号
-                    </p>
-                    <span class="contact-form__input _com__contact-form__item__input-wrap">
-                        <input class="_com__contact-form__item__input" type="text">
-                    </span>
-                </label>
-                <label for="" class="cocntact-form__text _com__cocntact-form__item _flex">
-                    <p lass="contact-form__text _com__contact-form__item__label">
-                        <span class="must-mark">*</span>*お問い合わせ内容
-                    </p>
-                    <span class="contact-form__input _com__contact-form__item__input-wrap">
-                        <textarea class="_com__contact-form__item__input"a name="" id="" cols="30" rows="10"></textarea>
-                    </span>
-                </label>
-                <p class="contact-form_privacy"><a href="">プライバシー</a>をお読みください</p>
-                <div class="contact-form__btn-wrap _com-btn-wrap">
-                    <input type="button" value="送信" class="contact-form__btn _com-btn" >
-                </div>
-            </form>
         </section>
     </main>
     <footer class="footer">
-        <nav class="footer-nav">
-            <ul class="footer-lists _flex">
-                <li class="footer-lists__item">
-                    <a href=""></a>
-                </li>
-                <li class="footer-lists__item">
-                    <a href=""></a>
-                </li>
-                <li class="footer-lists__item">
-                    <a href=""></a>
-                </li>
-                <li class="footer-lists__item">
-                    <a href=""></a>
-                </li>
-                <li class="footer-lists__item">
-                    <a href=""></a>
-                </li>
-                <li class="footer-lists__item">
-                    <a href=""></a>
-                </li>
-            </ul>
-        </nav>
-        <div class="footer-links _flex">
-            <a href="" class="footer-links__logo">
-                <img src="./img/com/logo.png" alt="">
-            </a>
-            <a href="" class="footer-links__online-btn">
-                <img src="./img/com/onlineshop_btn.png" alt="">
-            </a>
+        <div class="footer-inner">
+            <nav class="footer-nav">
+                <ul class="footer-lists _flex">
+                    <li class="footer-lists__item">
+                        <a href="">お知らせ</a>
+                    </li>
+                    <li class="footer-lists__item">
+                        <a href="">私たちについて</a>
+                    </li>
+                    <li class="footer-lists__item">
+                        <a href="">お客さまとの4つのお約束</a>
+                    </li>
+                    <li class="footer-lists__item">
+                        <a href="">事業内容</a>
+                    </li>
+                    <li class="footer-lists__item">
+                        <a href="">会社概要</a>
+                    </li>
+                    <li class="footer-lists__item">
+                        <a href="">お問い合わせ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-links _flex">
+                <a href="" class="footer-links__logo">
+                    <img src="./img/com/footer-logo.png" alt="">
+                </a>
+                <a href="" class="footer-links__online-btn">
+                    <img src="./img/com/onlineshop_btn.png" alt="">
+                </a>
+            </div>
+            <p class="footer-copyright">
+                <a href="">@2022 株式会社ヘルメス</a>
+            </p>
         </div>
-        <p class="footer-copylight">
-            <a href="">@2022 株式会社ヘルメス</a>
-        </p>
     </footer>
 
 
