@@ -18,6 +18,7 @@ $main-bgc: #F0F5FD;
 
 // font-size
 $base-fz: 16px;
+$base-fz_sp: 14px;
 
 //font-family
 $base-ff: 'Noto Sans JP', sans-serif;
@@ -33,12 +34,12 @@ $fv-title: fot-klee-pro, sans-serif;
     }
 }
 
-@include mq(md){
+@include mq(smn){
     .is-sp{
         display: none;
     }
 }
-@include mq(smn){
+@include mq(sm){
     .is-pc{
         display: none;
     }

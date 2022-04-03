@@ -10,6 +10,9 @@
 .fv__images-wrap{
     position: relative;
     width: calc((1265 / 1440) * 100%);
+    @include mq(sm){
+        width: calc(100% - 16px);
+    }
 }
 
 .fv-images{
@@ -18,11 +21,19 @@
         position: relative;
         overflow: hidden;
         padding-top: 52.173913%;
+        @include mq(sm){
+            padding-top: 153%;
+            max-height: 560px;
+        }
         img{
             position: absolute;
             transform: translate(-50%, -50%);
             top: 50%;
             left: 50%;
+            @include mq(sm){
+                height: 100%;
+                width: auto;
+            }
         }
     }
 }
@@ -34,6 +45,10 @@
     left: 15.5%;
     background-color: rgba(255, 255, 255, .8);
     padding: 25px 50px;
+    @include mq(sm){
+        left: 0;
+        top: 36.84%;
+    }
     &__title,
     &__txt{
         color: $main-color;
@@ -44,13 +59,19 @@
         font-size: 2.5em;
         font-weight: 600;
         letter-spacing: 4px;
+        @include mq(sm){
+            font-size: 2em;
+            letter-spacing: normal;
+        }
     }
     &__txt{
-        // margin-top: 5px;
         font-weight: 500;
         line-height: 1.88889em;
         letter-spacing: .9px;
         font-size: 1.125em;
+        @include mq(sm){
+            font-size: 1em;
+        }
     }
 }
 

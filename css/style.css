@@ -36,13 +36,13 @@ img {
 /*====================================================================
                     mixin
 ====================================================================*/
-@media screen and (max-width: 1025px) {
+@media screen and (min-width: 769px) {
   .is-sp {
     display: none;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 768px) {
   .is-pc {
     display: none;
   }
@@ -68,6 +68,12 @@ img {
   font-size: 16px;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.888889em;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
 }
 
 main {
@@ -409,6 +415,12 @@ main {
   width: calc((1265 / 1440) * 100%);
 }
 
+@media screen and (max-width: 768px) {
+  .index .fv__images-wrap {
+    width: calc(100% - 16px);
+  }
+}
+
 .index .fv-images {
   width: 100%;
 }
@@ -419,12 +431,26 @@ main {
   padding-top: 52.173913%;
 }
 
+@media screen and (max-width: 768px) {
+  .index .fv-images__item {
+    padding-top: 153%;
+    max-height: 560px;
+  }
+}
+
 .index .fv-images__item img {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .index .fv-images__item img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 .index .fv-text {
@@ -435,6 +461,13 @@ main {
   left: 15.5%;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 25px 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .index .fv-text {
+    left: 0;
+    top: 36.84%;
+  }
 }
 
 .index .fv-text__title, .index .fv-text__txt {
@@ -449,11 +482,24 @@ main {
   letter-spacing: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  .index .fv-text__title {
+    font-size: 2em;
+    letter-spacing: normal;
+  }
+}
+
 .index .fv-text__txt {
   font-weight: 500;
   line-height: 1.88889em;
   letter-spacing: .9px;
   font-size: 1.125em;
+}
+
+@media screen and (max-width: 768px) {
+  .index .fv-text__txt {
+    font-size: 1em;
+  }
 }
 
 .index .news {

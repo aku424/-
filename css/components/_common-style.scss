@@ -3,6 +3,9 @@
     font-size: $base-fz;
     font-family: $base-ff;
     line-height: 1.888889em;
+    @include mq(sm){
+        font-size: $base-fz_sp;
+    }
 }
 
 main{
