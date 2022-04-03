@@ -1114,13 +1114,198 @@ main {
 }
 
 /*====================================================================
-                    about
+                    page-product
 ====================================================================*/
+.page-product {
+  padding-bottom: 120px;
+  /*====================================================================
+                    商品詳細
+====================================================================*/
+}
+
+.page-product .pp__img {
+  position: relative;
+  padding-top: 56.21%;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.page-product .pp__img img {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+}
+
+.page-product .pp__text {
+  padding: 80px 60px;
+  background-color: #fff;
+}
+
+.page-product .pp__text__title, .page-product .pp__text__txt {
+  line-height: 1;
+  text-align: center;
+}
+
+.page-product .pp__text__title {
+  font-size: 2em;
+  color: #2D58AF;
+  margin-bottom: 18px;
+}
+
+.page-product .pp__text__txt {
+  color: #000000;
+  font-size: 1.12em;
+  margin-bottom: 45px;
+}
+
+.page-product .pp__text__lists {
+  margin-bottom: -50px;
+}
+
+.page-product .pp__text__lists__item {
+  margin-bottom: 50px;
+}
+
+.page-product .pp__text__lists__item__title {
+  border-left: 6px solid #2D58AF;
+  padding-left: 8px;
+  font-size: 1.5em;
+  color: #2D58AF;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.page-product .pp__text__lists__item__txt {
+  font-size: 1.12em;
+  line-height: 1.94em;
+}
+
+.page-product .pp__info {
+  background-color: #fff;
+  padding: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-product .pp__info__img, .page-product .pp__info__lists {
+  width: calc((400 / 830) * 100%);
+}
+
+.page-product .pp__info__lists__title {
+  font-size: 1.12em;
+  color: #2D58AF;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.page-product .pp__info__lists__text {
+  font-size: 1em;
+  color: #000000;
+  line-height: 2em;
+  margin-bottom: 16px;
+}
+
 /*====================================================================
-                    works
+                    single
 ====================================================================*/
-body {
-  height: 30px;
+.single {
+  padding-bottom: 120px;
+  /*====================================================================
+                    single-content
+====================================================================*/
+}
+
+.single .single-content {
+  padding: 46px 80px 60px;
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+
+.single .sc__info {
+  margin-bottom: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single .sc__info time {
+  font-size: 1.12em;
+  color: #000000;
+  padding-right: 18px;
+  line-height: 1;
+}
+
+.single .sc__info span {
+  display: inline-block;
+  line-height: 1;
+  background-color: #F0F5FD;
+  padding: 6px 24px;
+}
+
+.single .sc__title {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.single .sc__img {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  margin-bottom: 45px;
+}
+
+.single .sc__img img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.single .sc__text-wrap {
+  width: calc((650 / 830) * 100%);
+  margin: auto;
+}
+
+.single .sc__text-wrap .sc__text {
+  font-size: 1.12em;
+  line-height: 1.94em;
+  margin-bottom: 12px;
+}
+
+.single .single__pagination {
+  max-width: 665px;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.single .single__pagination__item {
+  border: 1px solid #D3D3D3;
+  text-align: center;
+  width: 40px;
+}
+
+.single .single__pagination__item a {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.single .single__pagination__item:nth-child(2) {
+  width: 150px;
 }
 
 /*====================================================================
@@ -1275,6 +1460,108 @@ body {
 
 .archive .pagination__lists > ._active a {
   color: #fff;
+}
+
+/*====================================================================
+                    privacy_policy
+====================================================================*/
+.pp_container {
+  background-color: #F0F5FD;
+}
+
+.pp_contents {
+  max-width: 950px;
+  background-color: #fff;
+  padding: 70px 60px;
+  margin: auto;
+}
+
+.pp_contents p, .pp_contents li {
+  font-size: 1rem;
+  line-height: 1.9em;
+  font-weight: 500;
+  padding: 0 0 32px 0;
+}
+
+.pp_declare {
+  margin: 0 0 33px 0;
+}
+
+.pp_box {
+  padding: 0 0 23px 0;
+}
+
+.pp_ttl {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: 400;
+  border-left: 6px solid #2D58AF;
+  padding: 0 0 0 12px;
+  margin: 0 0 40px 0;
+}
+
+.pp_num {
+  padding: 0 15px 0 0;
+}
+
+.pp_contents p.box_list-dot {
+  padding: 0 0 5px 0;
+}
+
+.pp_contents p.box_list-dot-last {
+  padding: 0 0 32px 0;
+}
+
+.pp_contents p.box_list-bnum {
+  padding: 0 0 5px 0;
+}
+
+.pp_contents p.box_list-bnum-last {
+  padding: 0 0 32px 0;
+}
+
+.pp_databox p {
+  padding: 0 0 5px 0;
+}
+
+/* responsive*/
+/* ============================================ */
+@media screen and (max-width: 768px) {
+  .pp_container {
+    background-color: #F0F5FD;
+    padding: 60px 0 80px;
+  }
+  .pp_contents {
+    max-width: 91%;
+    padding: 50px 12px 45px;
+  }
+  .pp_contents p, .pp_contents li {
+    font-size: 0.75rem;
+  }
+  .pp_declare {
+    margin: 0;
+  }
+  .pp_ttl {
+    font-size: 1.12em;
+    border-left: 3px solid #2D58AF;
+    padding: 0 0 0 8px;
+    margin: 0 0 16px 0;
+  }
+  .pp_contents p, .pp_contents li {
+    padding: 0 0 16px 0;
+  }
+  .pp_box {
+    padding: 0 0 8px 0;
+  }
+  .pp_contents p.box_list-dot-last {
+    padding: 0 0 16px 0;
+  }
+  .pp_contents p.box_list-bnum-last {
+    padding: 0 0 16px 0;
+  }
+  .pp_databox p {
+    padding: 0 0 5px 0;
+  }
 }
 
 /*====================================================================
