@@ -1211,10 +1211,101 @@ main {
 }
 
 /*====================================================================
-                    works
+                    single
 ====================================================================*/
-body {
-  height: 30px;
+.single {
+  padding-bottom: 120px;
+  /*====================================================================
+                    single-content
+====================================================================*/
+}
+
+.single .single-content {
+  padding: 46px 80px 60px;
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+
+.single .sc__info {
+  margin-bottom: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single .sc__info time {
+  font-size: 1.12em;
+  color: #000000;
+  padding-right: 18px;
+  line-height: 1;
+}
+
+.single .sc__info span {
+  display: inline-block;
+  line-height: 1;
+  background-color: #F0F5FD;
+  padding: 6px 24px;
+}
+
+.single .sc__title {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.single .sc__img {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  margin-bottom: 45px;
+}
+
+.single .sc__img img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.single .sc__text-wrap {
+  width: calc((650 / 830) * 100%);
+  margin: auto;
+}
+
+.single .sc__text-wrap .sc__text {
+  font-size: 1.12em;
+  line-height: 1.94em;
+  margin-bottom: 12px;
+}
+
+.single .single__pagination {
+  max-width: 665px;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.single .single__pagination__item {
+  border: 1px solid #D3D3D3;
+  text-align: center;
+  width: 40px;
+}
+
+.single .single__pagination__item a {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.single .single__pagination__item:nth-child(2) {
+  width: 150px;
 }
 
 /*====================================================================
