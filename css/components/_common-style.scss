@@ -23,7 +23,7 @@
     img{
         display: block;
         margin: auto;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         width: 70px;
     }
 }
@@ -106,38 +106,40 @@
 
 //footer
 .footer{
-    padding-top: 54px;
+    padding-top: 42px;
     padding-bottom: 19px;
     background-color: $main-color;
     &-inner{
-        max-width: 780px;
+        max-width: 797px;
         margin: auto;
     }
     &-nav{
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         .footer-lists{
             justify-content: space-between;
             &__item{
                 a{
                     color: #fff;
                     text-decoration: none;
+                    font-weight: medium;
                 }
             }
         }
     }
     &-links{
         justify-content: space-between;
-        margin-bottom: 25px;
+        margin-bottom: 0px;
+        align-items: center;
         &__logo{
             width: fit-content;
-            width: calc((192 / 780) * 100%);
+            width: calc((192 / 797) * 100%);
             img{
                 width: 100%;
             }
         }
         &__online-btn{
             width: fit-content;
-            width: calc((265 / 780) * 100%);
+            width: calc((270 / 797) * 100%);
             img{
                 width: 100%;
             }

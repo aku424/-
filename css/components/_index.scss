@@ -34,7 +34,7 @@
     top: 50%;
     left: 15.5%;
     background-color: rgba(255, 255, 255, .8);
-    padding: 40px 50px;
+    padding: 25px 50px;
     &__title,
     &__txt{
         color: $main-color;
@@ -44,11 +44,13 @@
     &__title{
         font-size: 2.5em;
         font-weight: 600;
+        letter-spacing: 4px;
     }
     &__txt{
-        margin-top: 20px;
+        // margin-top: 5px;
         font-weight: 500;
-        line-height: 1em;
+        line-height: 1.88889em;
+        letter-spacing: .9px;
         font-size: 1.125em;
     }
 }
@@ -63,11 +65,11 @@
     }
     &-contents-wrap{
         background-color: #fff;
-        padding: 60px 85px;
+        padding: 50px 85px;
         width: 100%;
     }
     &-contents{
-        margin-bottom: 50px;
+        margin-bottom: 45px;
         align-items: center;
     }
 }
@@ -76,6 +78,9 @@
     width: 183.5px;
     .news-contents__title{
         width: 128px;
+        img{
+            width: 55px;
+        }
     }
 
 }
@@ -84,7 +89,7 @@
     position: relative;
     width: calc(100% - 183.5px) ;
     padding-left: 63px;
-    margin-bottom: -20px;
+    margin-bottom: -15px;
     &::before{
         position: absolute;
         content: "";
@@ -97,7 +102,7 @@
         
     }
     &__item{
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         align-items: center;
         a{
             display: flex;
@@ -108,13 +113,12 @@
         &__date{
             display: inline-block;
             font-size: 1.125em;
-            // margin-right: 20px;
             width: 90px;
         }
         &__cat{
             background-color: $main-bgc;
             display: inline-block;
-            padding: 6px 0;
+            padding: 0px;
             text-align: center;
             width: 104px;
             font-size: 1em;
@@ -130,7 +134,7 @@
     @include _com-btn-wrap;
 }
 .news-contents__btn{
-    @include _com-btn (24px 100px ,50px);
+    @include _com-btn (15px 100px ,70px);
 }
 
 /*====================================================================
@@ -139,14 +143,14 @@
 .about{
     @include _com-bg;
     .inner{
-        padding-top: 133px;
+        padding-top: 140px;
         padding-bottom: 158px;
     }
     .about-title{
         margin: auto;
-        margin-bottom: 46px;
+        margin-bottom: 30px;
         img{
-            width: 68px;
+            width: 64px;
         }
     }
 }
@@ -156,7 +160,7 @@
         align-items: center;
         &__text{
             background-color: rgba(240, 245, 253, .5);
-            padding: 70px 65px;
+            padding: 70px 66px;
             p{
                 line-height: 1.94em;
                 font-size: 1.125em;
@@ -177,10 +181,12 @@
             }
         }
         &:nth-child(2){
-            margin-top: -25px;
-            margin-bottom: -25px;
+            margin-top: -30px;
+            margin-bottom: -30px;
             .about-contents__item__text{
                 width: calc((583 / 950) * 100%);
+                padding-top: 65px;
+                padding-bottom: 65px;
                 p{
                     span{
                         color: $main-color;
@@ -197,6 +203,7 @@
         &:last-child{
             .about-contents__item__text{
                 width: calc((746 / 950) * 100%);
+                padding: 65px 68px;
             }
             .about-contents__item__img{
                 position: relative;
@@ -224,23 +231,27 @@
     background-color: $main-bgc;
     .promise-title{
         margin: auto;
-        margin-bottom: 22px;
+        margin-bottom: 12px;
+        img{
+            width: 83px;
+        }
     }
     
     .promise-text{
         text-align: center;
         line-height: 1.666em;
         font-size: 1.125em;
-        margin-bottom: 86px;
+        margin-bottom: 80px;
     }
 }
 
 .promise-contents{
-    margin-bottom: -50px;
+    margin-bottom: -52px;
     &__item{
         width: 100%;
-        margin-bottom: 50px;
-        padding: 50px 35px;
+        margin-bottom: 52px;
+        padding: 40px 50px;
+        padding-bottom: 48px;
         background-color: #fff;
         position: relative;
         &::before{
@@ -279,22 +290,25 @@
             position: relative;
             width: calc((550 / 950) * 100%);
             &__title{
-                margin-bottom: 35px;
+                margin-bottom: 24px;
                 span{
                     font-size: 1.5em;
                     font-family: $fv-title;
                     color: $main-color;
+                    line-height: 1.8em;
+                    letter-spacing: .5px;
                 }
             }
             &__txt{
-                padding-right: 50px;
+                padding-right: 54px;
                 span{
                     color: $main-color;
                 }
             }
         }
         &__img{
-            width: calc((400 / 950) * 100%);
+            margin-top: 12px;
+            width: calc((400 / 800) * 100%);
         }
     }
 }
@@ -302,19 +316,20 @@
                     business
 ====================================================================*/
 .business{
-    padding-top: 168px;
-    padding-bottom: 185px;
+    padding-top: 172px;
+    padding-bottom: 255px;
     @include _com-bg;
     &-title{
         margin: auto;
-        margin-bottom: 24px;
+        margin-bottom: 14px;
         img{
             width: 80px;
         }
     }
     &-text{
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 55px;
+        font-size: 1.12em;
     }
 }
 
@@ -325,11 +340,16 @@
         background-color: $main-bgc;
         width: calc((100% - 60px) / 3);
         &__text{
-            padding: 15px 20px 60px 20px;
+            padding: 0px 20px 65px 20px;
             &__title{
                 font-size: 1.25em;
                 color: $main-color;
-                margin-bottom: 16px;
+                margin-bottom: 8px;
+                line-height: 1.5em;
+            }
+            &__txt{
+                line-height: 1.6875em;
+                font-size: 1em;
             }
         }
         &__btn-wrap{
@@ -341,22 +361,23 @@
             @include _com-btn-wrap;
             .business__contents__lists__item__btn{
                 font-size: 1.12em;
-                @include _com-btn(20px 80px ,16px);
+                font-weight: normal;
+                @include _com-btn(14px 87px ,20px);
             }
         }
     }
 }
 
 .business__links{
-    margin-top: 180px;
+    margin-top: 185px;
     justify-content: space-between;
     &__item{
         position: relative;
         width: calc((100% - 30px) / 2);
         border: 1px solid $main-color;
         text-align: center;
-        padding-top: 40px;
-        padding-bottom: 35px;
+        padding-top: 50px;
+        padding-bottom: 20px;
         &__mark{
             position: absolute;
             display: inline-block;
@@ -371,7 +392,7 @@
             span{
                 display: block;
                 text-align: center;
-                margin-top: 32.5px;
+                margin-top: 46px;
                 img{
                     width: 50px;
                 }
@@ -381,14 +402,13 @@
             font-size: 1.5em;
             color: $main-color;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
         &__btn-wrap{
             @include _com-btn-wrap;
             .business__links__item__btn{
-                @include _com-btn( 20px 50px, 12px);
-                padding-top: 15px;
-                padding-bottom: 15px;
+                @include _com-btn( 22px 65px, 42px);
+                line-height: 1;
                 &::before{
                 }
             }
@@ -398,6 +418,8 @@
             color: $main-color;
             margin-bottom: 12px;
             text-decoration: none;
+            letter-spacing: 1;
+            line-height: 1;
         }
         &__tell-time{
             font-size: 1em;
@@ -416,7 +438,7 @@
             width: 80px;
         }
         margin: auto;
-        margin-bottom: 46px;
+        margin-bottom: 36px;
     }
 }
 
@@ -424,19 +446,20 @@
     background-color: #fff;
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
     &__item{
         width: fit-content;
         margin: auto;
-        margin-bottom: 35px;
+        margin-bottom: 20px;
+        line-height: 1.1222em;
         &:last-child{
             margin-bottom: 0;
         }
         &__label{
             position: relative;
             text-align: right;
-            width: 110px;
-            padding-right: 20px;
+            width: 115px;
+            padding-right: 25px;
             color: $main-color;
             font-size: 1.12em;
             &::before{
@@ -451,15 +474,16 @@
             }
         }
         &__text{
-            width: 445px;
+            width: 440px;
             padding-left: 25px;
+            font-size: 1.12em;
         }
     }
 }
 
 .company__map-wrap{
     position: relative;
-    margin-top: 95px;
+    margin-top: 100px;
     width: 100%;
     padding-top: 25%;
     overflow: hidden;
@@ -484,7 +508,7 @@
     background-color: $main-bgc;
     &-title{
         margin: auto;
-        margin-bottom: 32px;
+        margin-bottom: 12px;
         img{
             width: 76px;
         }
@@ -492,23 +516,23 @@
     &__text{
         font-size: 1.12em;
         margin: auto;
-        margin-bottom: 50px;
+        letter-spacing: .1px;
+        margin-bottom: 45px;
         width: fit-content;
         span{
             display: inline-block;
             width: 100%;
             text-align: right;
-            
-            margin-top: 18px;
+            margin-top: 6px;
             color: $main-color;
-            font-size: 1em;
+            font-size: .8em;
         }
     }
 }
 
 .contact-form{
     background-color: #fff;
-    padding-top: 80px;
+    padding-top: 78px;
     padding-bottom: 80px;
     ._com__contact-form__item{
         width: calc((694 / 950) * 100%);
@@ -516,7 +540,7 @@
         margin: auto;
         margin-bottom: 40px;
         &:last-child{
-           background-color: red;
+
         }
         &__label{
             margin-top: 10px;
@@ -546,7 +570,7 @@
         }
     }
     .contact-form__textarea{
-        margin-bottom: 55px;
+        margin-bottom: 40px;
         ._com__contact-form__item__input-wrap{
             ._com__contact-form__item__input{
                 height: 166px;
@@ -556,7 +580,8 @@
     }
     .contact-form_privacy{
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 24px;
+        font-size: 1.12em;
     }
     .contact-form__btn-wrap{
         position: relative;
@@ -590,8 +615,7 @@
             margin: 0;
             text-decoration: none;
             position: relative;
-            
-            @include _com-btn(20px 115px, 50px);
+            @include _com-btn(15px 110px, 50px);
             &:hover,
             &:focus{
                 outline: none;
