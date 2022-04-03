@@ -70,6 +70,11 @@ img {
   line-height: 1.888889em;
 }
 
+main {
+  padding-top: 100px;
+  background-color: #F0F5FD;
+}
+
 .inner {
   max-width: 950px;
   margin: auto;
@@ -104,6 +109,33 @@ img {
 
 ._new-line {
   display: inline-block;
+}
+
+.page-title-wrap {
+  text-align: center;
+  margin-top: 99px;
+  margin-bottom: 83px;
+}
+
+.page-title-wrap .page-title {
+  position: relative;
+  font-size: 2em;
+  font-weight: medium;
+  line-height: 1;
+  color: #2D58AF;
+}
+
+.page-title-wrap .page-title::before {
+  position: absolute;
+  content: "";
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  height: 3px;
+  width: 15px;
+  border-radius: 1.5px;
+  background-color: #2D58AF;
+  bottom: -20px;
 }
 
 .header {
@@ -283,7 +315,6 @@ img {
 }
 
 .index .fv {
-  padding-top: 100px;
   width: 100%;
   background-color: #F0F5FD;
 }
@@ -1093,8 +1124,159 @@ body {
 }
 
 /*====================================================================
-                    blog
+                    archive
 ====================================================================*/
+.archive {
+  /*====================================================================
+                    表示カテゴリーの切り替えボタン
+====================================================================*/
+  /*====================================================================
+                    年代別カテゴリー
+====================================================================*/
+  /*jsでクリックされた年代のボタンと同じ年代の一覧を表示*/
+  /*tag__20xxクラスに_activeをjsで追加する*/
+}
+
+.archive .a-container {
+  padding-bottom: 120px;
+}
+
+.archive .a__tab-lists {
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid #2D58AF;
+  margin-bottom: 60px;
+}
+
+.archive .a__tab-lists__item {
+  width: calc((100% - 40px) / 3);
+  background-color: #fff;
+  padding-top: 21px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.archive .a__tab-lists__item h2 {
+  color: #000000;
+  font-size: 1.12em;
+}
+
+.archive .a__tab-lists > ._active {
+  position: relative;
+  border-top: 4px solid #2D58AF;
+  border-right: 1px solid #2D58AF;
+  border-left: 1px solid #2D58AF;
+}
+
+.archive .a__tab-lists > ._active::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+  left: 50%;
+  bottom: 0px;
+}
+
+.archive .a__lists-wrap {
+  display: none;
+}
+
+.archive .a__lists-wrap-container ._active {
+  display: block;
+}
+
+.archive .a__lists {
+  margin-bottom: 60px;
+}
+
+.archive .a__lists__item {
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+
+.archive .a__lists__item a {
+  display: block;
+  padding: 60px;
+  text-decoration: none;
+}
+
+.archive .a__lists__item__info {
+  margin-bottom: 30px;
+}
+
+.archive .a__lists__item__info time {
+  font-size: 1.12em;
+  padding-right: 22px;
+  line-height: 1;
+}
+
+.archive .a__lists__item__info span {
+  display: inline-block;
+  line-height: 1;
+  padding: 6px 25px;
+  background-color: #F0F5FD;
+}
+
+.archive .a__lists__item__title {
+  line-height: 1;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.archive .a__lists__item__contents {
+  width: 100%;
+}
+
+.archive .a__lists__item__contents__img {
+  width: calc(100% - ((575 / 830) * 100%));
+}
+
+.archive .a__lists__item__contents__text {
+  padding-left: 30px;
+  width: calc((575 / 830) * 100%);
+}
+
+.archive .a__lists__item__contents__text p {
+  font-size: 1.12em;
+  line-height: 1.94444em;
+}
+
+.archive .pagination__lists {
+  margin-right: -10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.archive .pagination__lists__item {
+  margin-right: 10px;
+  width: 40px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #D3D3D3;
+}
+
+.archive .pagination__lists__item a {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-size: 0.938em;
+  text-decoration: none;
+}
+
+.archive .pagination__lists > ._active {
+  border: 1px solid #2D58AF;
+  background-color: #2D58AF;
+}
+
+.archive .pagination__lists > ._active a {
+  color: #fff;
+}
+
 /*====================================================================
                     contact
 ====================================================================*/

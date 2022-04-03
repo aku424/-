@@ -5,6 +5,11 @@
     line-height: 1.888889em;
 }
 
+main{
+    padding-top: 100px;
+    background-color: $main-bgc;
+}
+
 
 .inner{
     max-width: 950px;
@@ -34,6 +39,30 @@
 
 ._new-line{
     display: inline-block;
+}
+
+.page-title-wrap{
+    text-align: center;
+    margin-top: 99px;
+    margin-bottom: 83px;
+    .page-title{
+        position: relative;
+        font-size: 2em;
+        font-weight: medium;
+        line-height: 1;
+        color:  $main-color;
+        &::before{
+            position: absolute;
+            content: "";
+            transform: translate(-50%, -50%);
+            left: 50%;
+            height: 3px;
+            width: 15px;
+            border-radius: 1.5px;
+            background-color: $main-color;
+            bottom: -20px;
+        }
+    }
 }
 
 // header
