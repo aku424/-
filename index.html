@@ -16,8 +16,9 @@
     <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-    <!-- animate.css -->
-    <link rel="stylesheet" href="./css/animate.css">
+    <!-- slick.css -->
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <!-- main.css -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -29,7 +30,7 @@
                     <img src="./img/com/logo.png" alt="株式会社ヘルメスのロゴ">
                 </a>
             </h1>
-            <div class="header-nav-wrap">
+            <div id="han" class="header-nav-wrap ">
                 <div class="header-nav__ham-mark han">
                     <span class="header-nav__ham-mark__line header-nav__ham-mark__top"></span>
                     <span class="header-nav__ham-mark__line header-nav__ham-mark__middle"></span>
@@ -69,16 +70,27 @@
         <!-- fv -->
         <section class="fv">
             <div class="fv__images-wrap">
-                <ul class="fv-images">
-                    <li class="fv-images__item">
+                <ul class="fv-images is-pc slider">
+                    <li class="fv-images__item ">
                         <img src="./img/index/fv-img01.png" alt="fvのスライド画像1">
                     </li>
-                    <!-- <li class="fv-images__item">
+                    <li class="fv-images__item">
                         <img src="./img/index/fv-img02.png" alt="fvのスライド画像2">
                     </li>
                     <li class="fv-images__item">
                         <img src="./img/index/fv-img03.png" alt="fvのスライド画像3">
-                    </li> -->
+                    </li>
+                </ul>
+                <ul class="fv-images is-sp slider">
+                    <li class="fv-images__item">
+                        <img src="./img/index/fv-img_sp01.png" alt="fvのスライド画像1">
+                    </li>
+                    <li class="fv-images__item">
+                        <img src="./img/index/fv-img_sp02.png" alt="fvのスライド画像2">
+                    </li>
+                    <li class="fv-images__item">
+                        <img src="./img/index/fv-img_sp03.png" alt="fvのスライド画像3">
+                    </li>
                 </ul>
                 <div class="fv-text">
                     <p class="fv-text__title">健康的な未来をサポート</p>
@@ -114,14 +126,14 @@
                                 <a href="">
                                     <time class="news__lists__item__date" datetime="2022.01.01">2022.01.01</time>
                                     <span class="news__lists__item__cat">新商品</span>
-                                    <h3 class="news__lists__item__title">新商品「千年謳歌」発売のお知らせ</h3>
+                                    <h3 class="news__lists__item__title">ホームページをリニューアルいたしました。</h3>
                                 </a>
                             </li>
                             <li class="news__lists__item">
                                 <a href="">
                                     <time class="news__lists__item__date" datetime="2021.12.20">2021.12.20</time>
                                     <span class="news__lists__item__cat">新商品</span>
-                                    <h3 class="news__lists__item__title">新商品「千年謳歌」発売のお知らせ</h3>
+                                    <h3 class="news__lists__item__title">年末年始の営業と商品発送について</h3>
                                 </a>
                             </li>
                         </ul>
@@ -420,6 +432,11 @@
     </main>
     <footer class="footer">
         <div class="footer-inner">
+            <div class="footer__sp-logo is-sp">
+                <a href="">
+                    <img src="./img/com/footer-logo.png" alt="">
+                </a>
+            </div>
             <nav class="footer-nav">
                 <ul class="footer-lists _flex">
                     <li class="footer-lists__item">
@@ -443,7 +460,7 @@
                 </ul>
             </nav>
             <div class="footer-links _flex">
-                <a href="" class="footer-links__logo">
+                <a href="" class="footer-links__logo is-pc">
                     <img src="./img/com/footer-logo.png" alt="">
                 </a>
                 <a href="" class="footer-links__online-btn">
@@ -461,8 +478,8 @@
 <!-- script -->
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- wow.js -->
-    <script src="./js/wow.js"></script>
+   <!-- slick.js -->
+   <script src="./js/slick.min.js"></script>
     <!-- script.js -->
     <script src="./js/script.js"></script>
 <!-- script end -->

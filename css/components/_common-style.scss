@@ -3,11 +3,17 @@
     font-size: $base-fz;
     font-family: $base-ff;
     line-height: 1.888889em;
+    @include mq(sm){
+        font-size: $base-fz_sp;
+    }
 }
 
 main{
     padding-top: 100px;
     background-color: $main-bgc;
+    @include mq(han){
+        padding-top: 80px;
+    }
 }
 
 
@@ -17,6 +23,10 @@ main{
     box-sizing: content-box;
     padding-right: 32px;
     padding-left: 32px;
+    @include mq(sm){
+        padding-right: 16px;
+        padding-left: 16px;
+    }
 }
 
 ._com__section-title{
@@ -25,6 +35,10 @@ main{
     color: $main-color;
     font-size: 2em;
     font-weight: medium;
+    @include mq(sm){
+        font-size: 1.714em;
+
+    }
     img{
         display: block;
         margin: auto;
@@ -45,12 +59,19 @@ main{
     text-align: center;
     margin-top: 99px;
     margin-bottom: 83px;
+    @include mq(sm){
+        margin-top: 65px;
+        margin-bottom: 50px;
+    }
     .page-title{
         position: relative;
         font-size: 2em;
         font-weight: medium;
         line-height: 1;
         color:  $main-color;
+        @include mq(sm){
+            font-size: 1.714em;
+        }
         &::before{
             position: absolute;
             content: "";
@@ -74,16 +95,30 @@ main{
     width: 100%;
     z-index: 999;
     &-inner{
+        position: relative;
         background-color: #fff;
         padding: 10px 60px;
         align-items: center;
         justify-content: space-between;
+        @include mq(sm){
+            padding: 10px 16px;
+        }
     }
 }
 
 .header-logo{
     height: 80px;
     width: auto;
+    a{
+        display: block;
+    }
+    @include mq(han){
+        height: 60px;
+        img{
+            width: auto;
+            height: 60px;
+        }
+    }
     &:hover{
         opacity: .7;
     }
@@ -94,6 +129,7 @@ main{
 
 }
 
+//headerのPC用のデザイン
 .header-nav{
     &__lists{
         align-items: center;
@@ -108,28 +144,88 @@ main{
     }
 }
 
+@include mq(han){
+    .header-nav{
+        opacity: 0;
+        pointer-events: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:rgba(45, 88, 175, .9);
+        transition: all .3s;
+        .header-nav__lists{
+            display: block;
+            padding-top: 140px;
+            padding-bottom: 140px;
+            &__item{
+                display: block;
+                text-align: center;
+                margin-bottom: 40px;
+                a{
+                    color: #fff;
+                    img{
+                        max-width: 260px;
+                    }
+                }
+            }
+        }
+    }
+    ._open{
+        .header-nav{
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+}
+
 // ハンバーガーメニューのマーク
 .header-nav__ham-mark{
-    position: relative; width: 25px;
+    position: relative; 
+    width: 25px;
+    height: 20px;
     &__line{
         position: absolute;
         width: 100%;
         height: 3px;
         background-color: $main-color;
-        transform: translateX( -50%);
         left: 50%;
+        transition: all .3s;
     }
     &__top{
-        transform: translateY(0%);
-        top:0 ;
+        transform: translate(-50%, 0%);
+        top: 0%;
     }
     &__middle{
-        transform: translateY(-50%);
-        top:50% ;
+        transform: translate(-50%, -50%);
+        top: 50% ;
+        opacity: 1;
     }
-    &__top{
-        transform: translateY(-100%);
-        top:100% ;
+    &__bottom{
+        transform: translate(-50%, -100%);
+        top: 100% ;
+    }
+}
+
+._open{
+    .header-nav__ham-mark{
+        &__top,
+        &__bottom{
+            left: 50%;
+            top: 50%;
+        }
+        &__top{
+            transform: translate(-50%, -50%) rotate((45deg));
+        }
+        &__bottom{
+            transform: translate(-50%, -50%) rotate((-45deg));
+        }
+        &__middle{
+            opacity: 0;
+        }
     }
 }
 
@@ -138,19 +234,40 @@ main{
     padding-top: 42px;
     padding-bottom: 19px;
     background-color: $main-color;
+    @include mq(sm){
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
     &-inner{
         max-width: 797px;
         margin: auto;
+        @include mq(sm){
+            text-align: center;
+        }
+    }
+    .footer__sp-logo{
+        width: calc((144 / 375) * 100%);
+        margin: auto;
+        margin-bottom: 30px;
     }
     &-nav{
         margin-bottom: 40px;
         .footer-lists{
             justify-content: space-between;
+            @include mq(sm){
+                display: block;
+            }
             &__item{
+                @include mq(sm){
+                    margin-bottom: 24px;
+                }
                 a{
                     color: #fff;
                     text-decoration: none;
                     font-weight: medium;
+                    @include mq(sm){
+                        font-size: 1.143em;
+                    }
                 }
             }
         }
@@ -159,6 +276,10 @@ main{
         justify-content: space-between;
         margin-bottom: 0px;
         align-items: center;
+        @include mq(sm){
+            display: block;
+            margin-bottom: 12px;
+        }
         &__logo{
             width: fit-content;
             width: calc((192 / 797) * 100%);
@@ -169,6 +290,11 @@ main{
         &__online-btn{
             width: fit-content;
             width: calc((270 / 797) * 100%);
+            @include mq(sm){
+                display: block;
+                margin: auto;
+                width: calc((265 / 375 ) * 100%);
+            }
             img{
                 width: 100%;
             }
@@ -180,6 +306,10 @@ main{
             color: #BAD1FF;
             font-size: 0.813em;
             text-decoration: none;
+            @include mq(sm){
+                font-size: 0.714em;
+
+            }
         }
     }
 }

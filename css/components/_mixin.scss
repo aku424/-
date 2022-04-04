@@ -1,6 +1,6 @@
 $breakpoints: (
 //キー  値
-    'xs': 'screen and (max-width: 376px)',
+    'xs': 'screen and (max-width: 550px)',
     'sm': 'screen and (max-width: 768px)', //767px以下（スマホ）用の表示
     'smn': 'screen and (min-width: 769px)', //769px以上（PC）用の表示
     'md': 'screen and (max-width: 1025px)', //1024px以上（タブレット・PC）用の表示
@@ -18,6 +18,7 @@ $main-bgc: #F0F5FD;
 
 // font-size
 $base-fz: 16px;
+$base-fz_sp: 14px;
 
 //font-family
 $base-ff: 'Noto Sans JP', sans-serif;
@@ -33,12 +34,12 @@ $fv-title: fot-klee-pro, sans-serif;
     }
 }
 
-@include mq(md){
+@include mq(smn){
     .is-sp{
         display: none;
     }
 }
-@include mq(smn){
+@include mq(sm){
     .is-pc{
         display: none;
     }
@@ -89,7 +90,3 @@ $fv-title: fot-klee-pro, sans-serif;
     background: rgb(240,245,253);
     background: linear-gradient(180deg, rgba(240,245,253,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(240,245,253,1) 100%);
 }
-
-
-
-//共通のスタイルのボタン
