@@ -1,5 +1,8 @@
 .page-product{
     padding-bottom: 120px;
+    @include mq(sm){
+        padding-bottom: 80px;
+    }
 /*====================================================================
                     商品詳細
 ====================================================================*/
@@ -21,6 +24,11 @@
 .pp__text{
     padding: 80px 60px;
     background-color: #fff;
+    margin-bottom: 40px;
+    @include mq(sm){
+        margin-bottom: 20px;
+        padding: 50px 16px;
+    }
     &__title,
     &__txt{
         line-height: 1;
@@ -28,15 +36,36 @@
     }
     
     &__title{
+        position: relative;
         font-size: 2em;
         color: $main-color;
-        margin-bottom: 18px;
+        margin-bottom: 24px;
+        &::before{
+            position: absolute;
+            content: "";
+            transform: translate(-50%, -50%);
+            bottom: -15px;
+            left: 50%;
+            height: 2px;
+            width: 10px;
+            background-color: $main-color;
+            border-radius: 1px;
+        }
+        @include mq(sm){
+        font-size: 1.286em;
+        }
     }
     
     &__txt{
         color: $base-fc;
         font-size: 1.12em;
         margin-bottom: 45px;
+        line-height: 1.78em;
+        @include mq(sm){
+            font-size: 1em;
+            margin-bottom: 40px;
+        }
+        
     }
 
     &__lists{
@@ -50,10 +79,17 @@
                 color: $main-color;
                 line-height: 1;
                 margin-bottom: 20px;
+                @include mq(sm){
+                    font-size: 1.286em;
+                    margin-bottom: 16px;
+                }
             }
             &__txt{
                 font-size: 1.12em;
                 line-height: 1.94em;
+                @include mq(sm){
+                    font-size: 1em;
+                }
             }
         }
     }
@@ -63,12 +99,22 @@
     background-color: #fff;
     padding: 60px;
     justify-content: space-between;
+    padding: 24px 16px;
+    @include mq(sm){
+        display: block;
+    }
     &__img,
     &__lists{
         width: calc((400 / 830) * 100%);
+        @include mq(sm){
+            width: 100%;
+        }
     }
 
     &__lists{
+        @include mq(sm){
+            margin-top: 18px;
+        }
         &__title{
             font-size: 1.12em;
             color: $main-color;

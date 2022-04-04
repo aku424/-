@@ -1738,6 +1738,12 @@ main {
 ====================================================================*/
 }
 
+@media screen and (max-width: 768px) {
+  .page-product {
+    padding-bottom: 80px;
+  }
+}
+
 .page-product .pp__img {
   position: relative;
   padding-top: 56.21%;
@@ -1758,6 +1764,14 @@ main {
 .page-product .pp__text {
   padding: 80px 60px;
   background-color: #fff;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-product .pp__text {
+    margin-bottom: 20px;
+    padding: 50px 16px;
+  }
 }
 
 .page-product .pp__text__title, .page-product .pp__text__txt {
@@ -1766,15 +1780,43 @@ main {
 }
 
 .page-product .pp__text__title {
+  position: relative;
   font-size: 2em;
   color: #2D58AF;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
+}
+
+.page-product .pp__text__title::before {
+  position: absolute;
+  content: "";
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  bottom: -15px;
+  left: 50%;
+  height: 2px;
+  width: 10px;
+  background-color: #2D58AF;
+  border-radius: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-product .pp__text__title {
+    font-size: 1.286em;
+  }
 }
 
 .page-product .pp__text__txt {
   color: #000000;
   font-size: 1.12em;
   margin-bottom: 45px;
+  line-height: 1.78em;
+}
+
+@media screen and (max-width: 768px) {
+  .page-product .pp__text__txt {
+    font-size: 1em;
+    margin-bottom: 40px;
+  }
 }
 
 .page-product .pp__text__lists {
@@ -1794,9 +1836,22 @@ main {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .page-product .pp__text__lists__item__title {
+    font-size: 1.286em;
+    margin-bottom: 16px;
+  }
+}
+
 .page-product .pp__text__lists__item__txt {
   font-size: 1.12em;
   line-height: 1.94em;
+}
+
+@media screen and (max-width: 768px) {
+  .page-product .pp__text__lists__item__txt {
+    font-size: 1em;
+  }
 }
 
 .page-product .pp__info {
@@ -1805,10 +1860,29 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 24px 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-product .pp__info {
+    display: block;
+  }
 }
 
 .page-product .pp__info__img, .page-product .pp__info__lists {
   width: calc((400 / 830) * 100%);
+}
+
+@media screen and (max-width: 768px) {
+  .page-product .pp__info__img, .page-product .pp__info__lists {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-product .pp__info__lists {
+    margin-top: 18px;
+  }
 }
 
 .page-product .pp__info__lists__title {
