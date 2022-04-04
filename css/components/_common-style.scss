@@ -59,12 +59,19 @@ main{
     text-align: center;
     margin-top: 99px;
     margin-bottom: 83px;
+    @include mq(sm){
+        margin-top: 65px;
+        margin-bottom: 50px;
+    }
     .page-title{
         position: relative;
         font-size: 2em;
         font-weight: medium;
         line-height: 1;
         color:  $main-color;
+        @include mq(sm){
+            font-size: 1.714em;
+        }
         &::before{
             position: absolute;
             content: "";
