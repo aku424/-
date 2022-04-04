@@ -23,6 +23,10 @@ main{
     box-sizing: content-box;
     padding-right: 32px;
     padding-left: 32px;
+    @include mq(sm){
+        padding-right: 16px;
+        padding-left: 16px;
+    }
 }
 
 ._com__section-title{
@@ -31,6 +35,10 @@ main{
     color: $main-color;
     font-size: 2em;
     font-weight: medium;
+    @include mq(sm){
+        font-size: 1.714em;
+
+    }
     img{
         display: block;
         margin: auto;
@@ -219,19 +227,40 @@ main{
     padding-top: 42px;
     padding-bottom: 19px;
     background-color: $main-color;
+    @include mq(sm){
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
     &-inner{
         max-width: 797px;
         margin: auto;
+        @include mq(sm){
+            text-align: center;
+        }
+    }
+    .footer__sp-logo{
+        width: calc((144 / 375) * 100%);
+        margin: auto;
+        margin-bottom: 30px;
     }
     &-nav{
         margin-bottom: 40px;
         .footer-lists{
             justify-content: space-between;
+            @include mq(sm){
+                display: block;
+            }
             &__item{
+                @include mq(sm){
+                    margin-bottom: 24px;
+                }
                 a{
                     color: #fff;
                     text-decoration: none;
                     font-weight: medium;
+                    @include mq(sm){
+                        font-size: 1.143em;
+                    }
                 }
             }
         }
@@ -240,6 +269,10 @@ main{
         justify-content: space-between;
         margin-bottom: 0px;
         align-items: center;
+        @include mq(sm){
+            display: block;
+            margin-bottom: 12px;
+        }
         &__logo{
             width: fit-content;
             width: calc((192 / 797) * 100%);
@@ -250,6 +283,11 @@ main{
         &__online-btn{
             width: fit-content;
             width: calc((270 / 797) * 100%);
+            @include mq(sm){
+                display: block;
+                margin: auto;
+                width: calc((265 / 375 ) * 100%);
+            }
             img{
                 width: 100%;
             }
@@ -261,6 +299,10 @@ main{
             color: #BAD1FF;
             font-size: 0.813em;
             text-decoration: none;
+            @include mq(sm){
+                font-size: 0.714em;
+
+            }
         }
     }
 }
