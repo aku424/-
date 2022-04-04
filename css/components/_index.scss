@@ -17,12 +17,21 @@
 
 .fv-images{
     width: 100%;
+    .slick-dots{
+        // width: fit-content;
+        // right: -30px;
+        // bottom: 0px;
+        @include mq(sm){
+            
+        }
+    }
     &__item{
         position: relative;
         overflow: hidden;
-        padding-top: 52.173913%;
+        // padding-top: 52.173913%;
+        padding-top: 7.46204%;
         @include mq(sm){
-            padding-top: 153%;
+            padding-top: 21.779%;
             max-height: 560px;
         }
         img{

@@ -13,4 +13,15 @@ $(function(){
     $("#han").click(function(){
         $(this).toggleClass("_open"); 
     })
+
+    //スライダー(slick)
+    $('.slider').slick({
+        dots:true,
+        autoplay: true,
+        autoplaySpeed: 3000
+
+
+    }
+    );
+
 });
